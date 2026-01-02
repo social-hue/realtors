@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600&display=swap');
+@import "tailwindcss";
+
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.heading {
+  font-family: 'Playfair Display', serif;
+}
