@@ -10,8 +10,7 @@
 !.yarn/releases
 !.yarn/versions
 
-*.mp4
-/public/*.mp4
+
 # testing
 /coverage
 
