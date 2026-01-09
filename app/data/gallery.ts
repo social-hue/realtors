@@ -28,25 +28,19 @@ export const galleryItems: GalleryItem[] = [
   {
     id: 3,
     type: "video",
-    src: "/vid1.mp4",
+    src: "/vid11.mp4",
     poster: "/vrindavancity.jpeg",
   },
   {
     id: 4,
-    type: "video",
-    src: "/vid1.mp4",
-    poster: "/vrindavancity.jpeg",
-  },
-  {
-    id: 5,
-    type: "video",
-    src: "/vid1.mp4",
-    poster: "/vrindavancity.jpeg",
-  },
-  {
-    id: 6,
     type: "image",
     src: "/location.jpeg",
     alt: "Asia Excellence Award",
+  },
+  {
+    id: 5,
+    type: "image",
+    src: "/vrindavancity.jpeg",
+    alt: "Certificate of Recognition",
   },
 ];

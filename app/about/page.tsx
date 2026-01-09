@@ -1,9 +1,9 @@
 import Image from "next/image";
+import { ShieldCheck, Building2, Users, FileText } from "lucide-react";
+import AboutPage from "../components/AboutPage";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-     <h1>WE ARE ABOUT TO LAUNCH THE REALTORS !</h1>
-    </div>
+    <AboutPage />
   );
 }
