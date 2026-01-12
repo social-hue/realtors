@@ -1,8 +1,4 @@
 import mongoose from "mongoose";
-import dotenv from "dotenv";
-
-// Explicitly load .env.local
-dotenv.config({ path: '.env.local' });
 
 type MongooseGlobal = {
   conn: typeof mongoose | null;
