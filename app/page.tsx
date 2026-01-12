@@ -10,7 +10,7 @@ const DholeraCapitalLanding = () => {
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-amber-500 selection:text-white">
       {/* --- Navigation --- */}
       {/* --- Hero Section --- */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen 2xl:h-[70vh] flex items-center justify-center overflow-hidden">
 
         <div className="absolute inset-0 bg-slate-900">
          <video
@@ -42,7 +42,7 @@ const DholeraCapitalLanding = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             <a href="/projects">
-            <button className="w-fit px-12 py-4 bg-amber-600 text-white font-medium rounded-sm hover:bg-amber-700 transition-all flex items-center justify-center gap-2">
+            <button className="w-fit px-12 py-3 bg-amber-600 text-white font-medium rounded-sm hover:bg-amber-700 transition-all flex items-center justify-center gap-2">
               Explore <ArrowRight className="w-4 h-4" />
             </button>
             </a>

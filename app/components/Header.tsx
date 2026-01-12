@@ -23,21 +23,20 @@ export default function Header(){
           : "bg-transparent"   
          }`}>                         
           <div className="max-w-7xl mx-auto px-6 flex h-full items-center justify-between">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-slate-900 flex items-center justify-center rounded-sm">
-                <span className="text-amber-500 font-serif font-bold text-xl">U</span>
-              </div>
-              <span className="text-2xl font-bold leading-relaxed text-slate-900">
-                Umang <span className="text-amber-600">Realtors</span>
-              </span>
-            </div>  
+            <a href="/">
+            <div className="flex items-center">
+              <img className='h-16 w-45 object-cover' src="/final.png" alt="logo" />
+            </div>
+            </a>  
             <div className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-slate-800">
               <a href="/about" className="hover:text-amber-600 transition-colors">About</a>
               <a href="/projects" className="hover:text-amber-600 transition-colors">Projects</a>
               {/* <a href="#gallery" className="hover:text-amber-600 transition-colors">Gallery</a> */}
+              <a href="tel:+919560986669">
               <button className="px-6 py-2.5 bg-slate-900 text-white rounded-sm hover:bg-slate-800 transition-all duration-300 shadow-lg shadow-slate-900/20">
                 Inquire Now
               </button>
+              </a>
             </div>
         <button
           onClick={() => setOpen(!open)}
@@ -75,9 +74,11 @@ export default function Header(){
           >
             Gallery
           </a> */}
+          <a href="tel:+919560986669">
           <button className="w-full px-6 py-3 bg-slate-900 text-white rounded-sm hover:bg-slate-800 transition">
             Inquire Now
           </button>
+          </a>
         </div>
           </div>
       </nav>
