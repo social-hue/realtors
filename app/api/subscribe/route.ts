@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/db";
 import EmailLead from "@/lib/models/EmailLead";
+import dbConnect from "@/lib/db";
 
 export async function POST(req: Request) {
   try {
@@ -13,7 +13,7 @@ export async function POST(req: Request) {
         { status: 400 }
       );
     }
-    await connectDB();
+    await dbConnect();
 
     // Prevent duplicates
     const exists = await EmailLead.findOne({ email });
