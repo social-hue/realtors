@@ -5,7 +5,7 @@ import "yet-another-react-lightbox/styles.css";
 import Gallery from '../components/Gallery';
 
 const DholeraCapitalLanding = () => {
-  
+
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900 selection:bg-amber-500 selection:text-white">
       {/* --- Navigation --- */}
@@ -14,7 +14,7 @@ const DholeraCapitalLanding = () => {
       <section className="relative h-screen 2xl:h-[70vh] flex items-center justify-center overflow-hidden">
 
         <div className="absolute inset-0 bg-slate-900">
-         <video
+          <video
             className="absolute inset-0 w-full h-full object-cover"
             src="/vid1.mp4"
             autoPlay
@@ -24,7 +24,7 @@ const DholeraCapitalLanding = () => {
           />
           <div className="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/60 to-transparent" />
         </div>
-        
+
         {/* Abstract Background Image/Overlay */}
 
         <div className="relative z-10 text-center max-w-4xl px-6 animate-fade-in-up">
@@ -45,14 +45,14 @@ const DholeraCapitalLanding = () => {
             <a href="/brochure.pdf"
               target="_blank"
               rel="noopener noreferrer">
-            <button className="w-fit px-12 py-4 bg-amber-600 text-white font-medium rounded-sm hover:bg-amber-700 transition-all flex items-center justify-center gap-2">
-              Brochure <ArrowRight className="w-4 h-4" />
-            </button>
+              <button className="w-fit px-12 py-3 bg-amber-600 text-white font-medium rounded-sm hover:bg-amber-700 transition-all flex items-center justify-center gap-2">
+                Brochure <ArrowRight className="w-4 h-4" />
+              </button>
             </a>
             <a href="/dholera-plan.pdf"
               target="_blank"
               rel="noopener noreferrer">
-              <button className="px-8 py-4 bg-transparent border border-slate-600 text-white font-medium rounded-sm hover:bg-white/5 transition-all">
+              <button className="px-8 py-3 bg-transparent border border-slate-600 text-white font-medium rounded-sm hover:bg-white/5 transition-all">
                 Download Plan
               </button>
             </a>
@@ -64,76 +64,76 @@ const DholeraCapitalLanding = () => {
       <section id="vision" className="mt-8 md:mt-0 md:py-16 bg-white overflow-hidden">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-4 items-center max-w-7xl mx-auto px-6">
 
-            {/* Text Content */}
-            <div className="space-y-8 md:w-[50%]">
-              <h2 className="text-4xl font-medium text-slate-900">
-                Vrindavan City <br />
-                <span className=" text-3xl text-amber-600 tracking-wider decoration-slate-200">Own The Divine</span>
-              </h2>
-              <p className="text-slate-600 text-md">
-                Experience the rapid development of Dholera SIR firsthand. From wide
-                infrastructure corridors to the upcoming international airport,
-                witness the birth of a global metropolis.
-              </p>
+          {/* Text Content */}
+          <div className="space-y-8 md:w-[50%]">
+            <h2 className="text-4xl font-medium text-slate-900">
+              Vrindavan City <br />
+              <span className=" text-3xl text-amber-600 tracking-wider decoration-slate-200">Own The Divine</span>
+            </h2>
+            <p className="text-slate-600 text-md">
+              Experience the rapid development of Dholera SIR firsthand. From wide
+              infrastructure corridors to the upcoming international airport,
+              witness the birth of a global metropolis.
+            </p>
 
-              <ul className="space-y-2 mt-6">
-                {[
-                  "NA, NOC, Title clear with immediate registry",
-                  "Gated Community Society",
-                  "Government Approved"
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-slate-700 font-medium">
-                    <CheckCircle2 className="w-5 h-5 text-amber-500" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className="space-y-2 mt-6">
+              {[
+                "NA, NOC, Title clear with immediate registry",
+                "Gated Community Society",
+                "Government Approved"
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-center gap-3 text-slate-700 font-medium">
+                  <CheckCircle2 className="w-5 h-5 text-amber-500" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            {/* THE 9:16 VIDEO PLACEHOLDER */}
-            <div className="flex justify-center">
-              <img src="/vrindavancity.jpeg" className='object-cover rounded-md' alt="object" />
-            </div>
-          
+          {/* THE 9:16 VIDEO PLACEHOLDER */}
+          <div className="flex justify-center">
+            <img src="/vrindavancity.jpeg" className='object-cover rounded-md' alt="object" />
+          </div>
+
         </div>
       </section>
 
-       <section id="vision" className="py-12 bg-white overflow-hidden">
+      <section id="vision" className="py-12 bg-white overflow-hidden">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-8 items-center max-w-7xl mx-auto px-6">
 
-        <div className="flex justify-center">
-              <img src="/location.jpeg" className='object-cover rounded-md' alt="object" />
-            </div>
-             
-            {/* Text Content */}
-            <div className="space-y-8 md:w-[45%]">
-              <h2 className="text-4xl font-medium text-slate-900">
-                Location Advantages     
-              </h2>
-              <p className="text-md">Live steps away from spirituality and serenity. Vrindavan City will host the upcoming ICONIC temple within its gated commmunity, offering a rare blend of luxury living and cultural landmark proximity.</p>
-              <ul className="space-y-3 mt-6">
-                {[
-                  "State Highway",
-                  "Ahmedabad-Dholera Expressway",
-                  "Monorail Station",
-                  "International Airport"
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-slate-700 font-medium">
-                    <CheckCircle2 className="w-5 h-5 text-amber-500" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="flex justify-center">
+            <img src="/location.jpeg" className='object-cover rounded-md' alt="object" />
+          </div>
 
-            {/* THE 9:16 VIDEO PLACEHOLDER */}
-           
+          {/* Text Content */}
+          <div className="space-y-8 md:w-[45%]">
+            <h2 className="text-4xl font-medium text-slate-900">
+              Location Advantages
+            </h2>
+            <p className="text-md">Live steps away from spirituality and serenity. Vrindavan City will host the upcoming ICONIC temple within its gated commmunity, offering a rare blend of luxury living and cultural landmark proximity.</p>
+            <ul className="space-y-3 mt-6">
+              {[
+                "State Highway",
+                "Ahmedabad-Dholera Expressway",
+                "Monorail Station",
+                "International Airport"
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-center gap-3 text-slate-700 font-medium">
+                  <CheckCircle2 className="w-5 h-5 text-amber-500" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* THE 9:16 VIDEO PLACEHOLDER */}
+
         </div>
       </section>
 
-    <section className="max-w-7xl bg-white mx-auto px-6 py-4 pb-12">
-      <Gallery />
-    </section>
+      <section className="max-w-7xl bg-white mx-auto px-6 py-4 pb-12">
+        <Gallery />
+      </section>
 
       {/* --- Master Plan / Plot Map Section --- */}
       <section id="master-plan" className="py-12 bg-slate-50">
@@ -170,7 +170,7 @@ const DholeraCapitalLanding = () => {
       </section>
 
       {/* --- CTA / Footer --- */}
-     
+
     </div>
   );
 };

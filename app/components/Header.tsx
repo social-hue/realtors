@@ -22,7 +22,7 @@ export default function Header(){
           ? "bg-white shadow-sm backdrop-blur-sm"
           : "bg-transparent"   
          }`}>                         
-          <div className="max-w-7xl mx-auto px-6 flex h-full items-center justify-between">
+          <div className="max-w-7xl mx-auto px-4 flex h-full items-center justify-between">
             <a href="/">
             <div className="flex items-center">
               <img className='h-16 w-45 object-cover' src="/final.png" alt="logo" />
