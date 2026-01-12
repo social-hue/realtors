@@ -54,15 +54,10 @@ export default function AboutPage() {
               A vision rooted in trust, <br /> clarity, and long-term value.
             </h1>
             <p className="mb-4 text-md leading-relaxed text-neutral-600">
-              Founded by a professional deeply connected to the local real estate
-              landscape, our company was built to redefine how property
-              transactions should feel — transparent, respectful, and informed.
+            Founded by Mr. Sanjay Bhardwaj, a professional deeply rooted in the local real estate landscape, the company was created to redefine property transactions through transparency, trust, and informed decision-making. Guided by the belief that real estate is about shaping futures - not just buying or selling - his focus has always been on honest guidance and long-term relationships.
             </p>
             <p className="text-md leading-relaxed text-neutral-600">
-              With a belief that real estate is not just about buying or selling
-              properties but about shaping futures, the focus has always been on
-              honest guidance and long-term relationships rather than short-term
-              gains.
+            With a grounded personality and experience in international-standard event design, hospitality management, and investment-driven real estate, Mr. Bhardwaj plays a pivotal role in client service, sales, and communications, ensuring every interaction reflects professionalism, clarity, and care.
             </p>
           </div>
         </div>
