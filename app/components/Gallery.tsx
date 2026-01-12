@@ -29,7 +29,7 @@ export default function Gallery() {
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         {/* Left title */}
-        <h3 className="text-4xl font-bold tracking-wide text-gray-800">
+        <h3 className="text-4xl font-medium tracking-wide text-gray-800">
           Gallery
         </h3>
 
@@ -62,7 +62,7 @@ export default function Gallery() {
           <button
             key={item.id}
             onClick={() => setActiveIndex(index)}
-            className="relative min-w-[260px] h-[160px] rounded-xl overflow-hidden shadow-md hover:scale-[1.03] transition-transform flex-shrink-0"
+            className="relative min-w-[260px] h-[160px] rounded-xl overflow-hidden shadow-md hover:scale-[1.03] transition-transform shrink-0"
           >
             {item.type === "image" ? (
               <Image
