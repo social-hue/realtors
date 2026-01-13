@@ -5,25 +5,24 @@ import dbConnect from "@/lib/db";
 export async function POST(req: Request) {
   try {
     const { email } = await req.json();
-
+ 
     // Validation
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {                 
       return NextResponse.json(
         { message: "Invalid email address" },
         { status: 400 }
       );
     }
-    await dbConnect();
 
-    // Prevent duplicates
-    const exists = await EmailLead.findOne({ email });
-    if (exists) {
-      return NextResponse.json(
-        { message: "Email already subscribed" },
-        { status: 409 }
+    await dbConnect();                                                    
+    // Prevent duplicates      
+    const exists = await EmailLead.findOne({ email });              
+    if (exists) {                             
+      return NextResponse.json(               
+        { message: "Email already subscribed" },               
+        { status: 409 }                     
       );
     }
-
     await EmailLead.create({ email });
 
     return NextResponse.json(

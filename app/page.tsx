@@ -78,7 +78,7 @@ const DholeraCapitalLanding = () => {
       </section>   
 
       <WhyChooseUs />
-      
+
     </div>
   );
 };
