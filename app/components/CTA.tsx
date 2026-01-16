@@ -25,7 +25,7 @@ export default function CTA() {
                             </p>
                         </div>
                         <div className="flex justify-center items-center h-14 w-14 p-2 rounded-full bg-teal-700 text-white">
-                            <a href="tel:+919560986669">
+                            <a href="tel:+917838697921">
                                 <FaPhoneAlt className="h-6 w-6" />
                             </a>
                         </div>
@@ -49,7 +49,7 @@ export default function CTA() {
                             </p>
                         </div>
                         <div className="flex justify-center items-center h-14 w-14 p-2 rounded-full bg-green-500 text-white">
-                            <a href="https://wa.me/919560986669" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/917838697921" target="_blank" rel="noopener noreferrer">
                                 <FaWhatsapp className="h-8 w-8" />
                             </a>
                         </div>

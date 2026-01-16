@@ -1,7 +1,7 @@
 "use client";
 import { Menu, X, MapPin, ArrowRight, Phone, Mail, Instagram, Linkedin, Facebook, CheckCircle2 } from 'lucide-react';
 import { useState } from 'react';
-
+ 
 export default function Footer() {
 
   const [email, setEmail] = useState("");
@@ -60,13 +60,13 @@ export default function Footer() {
               <h4 className="font-bold text-amber-500 mb-6 uppercase tracking-wider text-sm">Contact Us</h4>
               <ul className="space-y-4 text-slate-300 text-sm">
                 <li className="flex items-center gap-3">
-                  <Phone className="w-4 h-4" /> +91 9560986669
+                  <Phone className="w-4 h-4" /> +917838697921
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4" /> info@umangrealtors.com
                 </li>
                 <li className="flex items-center gap-3">
-                  <MapPin className="w-4 h-4" /> 2319, Wave Tower, Noida
+                  <MapPin className="w-4 h-4" /> 2319, Gold Wing, Wave One, Noida - 201301
                 </li>
               </ul>
             </div>
@@ -112,9 +112,15 @@ export default function Footer() {
                 </form>
               </div>
               <div className="flex gap-4 mt-8">
-                <Instagram className="w-5 h-5 text-slate-400 hover:text-white cursor-pointer transition-colors" />
-                <Linkedin className="w-5 h-5 text-slate-400 hover:text-white cursor-pointer transition-colors" />
+                <a target='_blank' href="https://www.facebook.com/profile.php?id=61585655565269">
                 <Facebook className="w-5 h-5 text-slate-400 hover:text-white cursor-pointer transition-colors" />
+                </a>    
+                <a target='_blank' href="https://www.linkedin.com/company/vrindavan-city-dholera-smart-choice-in-real-estate/">
+                <Linkedin className="w-5 h-5 text-slate-400 hover:text-white cursor-pointer transition-colors" />
+                </a>
+                <a target='_blank' href="https://www.instagram.com/umangrealtorsnoida/">
+                <Instagram className="w-5 h-5 text-slate-400 hover:text-white cursor-pointer transition-colors" />
+                </a>
               </div>
             </div>
           </div>

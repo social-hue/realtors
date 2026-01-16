@@ -53,7 +53,7 @@ export default function ExploreProject() {
             </Link>
 
             <Link
-              href="https://wa.me/919560986669" target="_blank" rel="noopener noreferrer"
+              href="https://wa.me/917838697921" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 border border-slate-300 text-slate-800 rounded-sm hover:border-slate-900 hover:text-slate-900 transition"
             >
               Inquire Now
