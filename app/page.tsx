@@ -1,90 +1,94 @@
-"use client";
-import { Play, Menu, X, MapPin, ArrowRight, Phone, Mail, Instagram, Linkedin, Facebook, CheckCircle2 } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import ExploreProject from './components/ExploreProject';
-import WhyChooseUs from './components/WhyChooseUs';
+import type { Metadata, Viewport } from 'next';
+import Home from './components/Home';
+
+// SEO Metadata
+export const metadata: Metadata = {
+  title: 'Dholera SIR Real Estate Investment | Premium Land Parcels in India\'s Future Smart City',
+  description: 'Invest in premium industrial and residential land parcels in Dholera SIR, India\'s first greenfield smart city. 2M+ sq. ft. delivered, 100+ happy investors, 150% appreciation. Secure your legacy in the next global economic hub.',
+  keywords: [
+    'Dholera SIR',
+    'Dholera real estate',  
+    'Dholera land investment',
+    'Dholera industrial plots',
+    'Dholera residential land',
+    'smart city investment India',
+    'Gujarat real estate',
+    'Dholera Special Investment Region',
+    'premium land parcels Dholera',
+    'industrial land Gujarat',
+    'Dholera property investment',
+    'real estate India',
+    'Dholera SIR projects',
+    'land appreciation Dholera',
+    'invest in Dholera',
+    'future smart city India',
+    'Gujarat industrial land',
+    'Dholera plots for sale',
+    'Umang Realtors'
+  ],
+  authors: [{ name: 'Umang Realtors' }],
+  creator: 'Umang Realtors',
+  publisher: 'Umang Realtors',
+  robots: {
+    index: true, 
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_IN',
+    url: 'https://www.umangrealtors.com',
+    siteName: 'Dholera Capital - Umang Realtors',
+    title: 'Invest in Dholera SIR | Premium Industrial & Residential Land Parcels',
+    description: 'Premium industrial and residential land parcels in Dholera SIR. 2M+ sq. ft. delivered, 100+ happy investors, 150% appreciation. Secure your legacy in India\'s future global economic hub.',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Dholera SIR Real Estate Investment',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Invest in Dholera SIR | Premium Land Parcels in India\'s Future Smart City',
+    description: 'Premium industrial and residential land in Dholera SIR. 2M+ sq. ft. delivered, 100+ investors, 150% appreciation. Secure your legacy today.',
+    images: ['/twitter-image.jpg'],
+    creator: '@UmangRealtors',
+  },
+  alternates: {
+    canonical: 'https://www.umangrealtors.com',
+  },
+  category: 'Real Estate',
+  classification: 'Real Estate Investment',
+  other: {
+    'geo.region': 'IN-GJ',
+    'geo.placename': 'Dholera',
+    'geo.position': '22.2455;72.1887',
+    'ICBM': '22.2455, 72.1887',
+  },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 const DholeraCapitalLanding = () => {
-
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-amber-500 selection:text-white">
-      {/* --- Navigation --- */}
-      {/* --- Hero Section --- */}
-      <section className="relative h-screen 2xl:h-[70vh] flex items-center justify-center overflow-hidden">
-
-        <div className="absolute inset-0 bg-slate-900">
-         <video
-            className="absolute inset-0 w-full h-full object-cover"   
-            src="/vid10.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline 
-          />
-          <div className="absolute inset-0 bg-linear-to-t from-slate-900/40 via-slate-900/60 to-transparent" />
-        </div>
-
-        {/* Abstract Background Image/Overlay */}
-
-        <div className="relative z-10 text-center max-w-4xl px-6 animate-fade-in-up">
-          <span className="inline-block mt-4 py-1 px-3 border border-amber-500/50 rounded-full text-amber-400 text-xs font-bold tracking-[0.2em] uppercase mb-6 bg-amber-900/20 backdrop-blur-sm">
-           Real Estate • Trust • Growth
-          </span>
-          <h1 className="text-4xl md:text-7xl font-medium text-white mb-6">
-            Invest in the <br />
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-amber-200 to-amber-500">
-              Future of India
-            </span>
-          </h1>
-          <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto font-light leading-relaxed">
-            Premium industrial and residential land parcels in the heart of Dholera SIR.
-            Secure your legacy in the next global economic hub.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <a href="/projects">
-            <button className="w-fit px-12 py-3 bg-amber-600 text-white font-medium rounded-sm hover:bg-amber-700 transition-all flex items-center justify-center gap-2">
-              Explore <ArrowRight className="w-4 h-4" />
-            </button>
-            </a>
-            {/* <a href="/dholera-plan.pdf"
-              target="_blank"
-              rel="noopener noreferrer">
-              <button className="px-8 py-4 bg-transparent border border-slate-600 text-white font-medium rounded-sm hover:bg-white/5 transition-all">
-                Download Plan
-              </button>
-            </a> */}
-          </div>
-        </div>
-      </section>
-      
-      <ExploreProject />
-      {/* --- 9:16 Video Showcase Section --- */}
-
-      {/* --- Stats Section --- */}
-      <section className="bg-slate-900 py-10 border-y border-slate-800">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
-          {[
-            { label: "Sq. Ft. Delivered", value: "2M+" },
-            { label: "Happy Investors", value: "100+" },
-            { label: "Projects", value: "8" },
-            { label: "Appreciation", value: "150%" },
-          ].map((stat, idx) => (
-            <div key={idx} className="space-y-2">
-              <div className="text-3xl md:text-5xl font-serif font-bold text-white">{stat.value}</div>
-              <div className="text-sm uppercase tracking-widest text-slate-400">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>   
-
-      <WhyChooseUs />
-
-    </div>
+    <Home />
   );
 };
 
 export default DholeraCapitalLanding;
-
 
 // export default function Home() {
 //   return (

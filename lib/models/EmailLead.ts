@@ -1,7 +1,7 @@
-import mongoose, { Schema, models, model } from "mongoose";
+import { Schema, models, model } from "mongoose";
 
 const EmailLeadSchema = new Schema(
-  {
+  {  
     email: {
       type: String,
       required: true,
@@ -10,7 +10,7 @@ const EmailLeadSchema = new Schema(
       trim: true,
     },
   },
-  { timestamps: true }
+  { timestamps: true }             
 );
 
 export default models.EmailLead || model("EmailLead", EmailLeadSchema);
