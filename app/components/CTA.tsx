@@ -14,7 +14,7 @@ export default function CTA() {
           opacity-0 translate-y-4 scale-95
           group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100
           transition-all duration-300 ease-out
-          pointer-events-none group-hover:pointer-events-auto
+          pointer-events-none group-hover:pointer-events-auto    
         "
                         >
                             <p className="text-sm font-semibold text-gray-900">
