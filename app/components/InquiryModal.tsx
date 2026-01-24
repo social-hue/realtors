@@ -7,12 +7,13 @@ interface InquiryModalProps {
 }
 
 export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
+    
     const [formData, setFormData] = useState({
         name: '',
         contact: '',
         email: '',
         query: ''
-    });
+    });        
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -138,4 +139,6 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
             </div>
         </div>
     );
+
 }
+

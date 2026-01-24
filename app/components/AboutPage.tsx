@@ -60,6 +60,7 @@ export default function AboutPage() {
             With a grounded personality and experience in international-standard event design, hospitality management, and investment-driven real estate, Mr. Bhardwaj plays a pivotal role in client service, sales, and communications, ensuring every interaction reflects professionalism, clarity, and care.
             </p>
           </div>
+          
         </div>
       </section>
 
@@ -88,7 +89,7 @@ export default function AboutPage() {
             What We Do
           </p>
           <h2 className="text-3xl font-medium text-neutral-800">
-            Thoughtful services built around your goals.
+            Thoughtful services built around your goals.                                                                                                                                     
           </h2>
         </div>
 
