@@ -8,7 +8,7 @@ import { MapPin, Plane, Train, Building2, FileCheck, Shield, Users, Hotel, Trend
 // True ---------------------------------------------------------------------------------------------------------------->  
 
 const fadeInUp = {
-    hidden: { opacity: 0, y: 10 },
+    hidden: { opacity: 0, y: 0 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
@@ -76,7 +76,7 @@ export default function DholeraCity() {
 
             {/* Hero Section */}
             <section className="relative py-20 md:py-24">
-                <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 md:gap-16 items-center">
 
                     {/* LEFT — TEXT CONTENT */}
                     <div className="max-w-4xl">
@@ -135,23 +135,23 @@ export default function DholeraCity() {
                     </div>
 
                     {/* RIGHT — IMAGE GRID */}
-                    <div className="relative max-w-xl">
+                    <div className="hidden md:block relative max-w-xl">
                         <div className="grid grid-cols-2 gap-3">
 
                             <div className="relative h-[220px] rounded-2xl overflow-hidden">
-                                <Image src="/hero-dholera.png" alt="Image 1" fill className="object-cover" />
+                                <Image src="/plot-lands.png" alt="Image 1" fill className="object-cover" />
                             </div>
 
                             <div className="relative h-[240px] mt-8 rounded-2xl overflow-hidden">
-                                <Image src="/dholera-2.jfif" alt="Image 2" fill className="object-cover" />
+                                <Image src="/investment.png" alt="Image 2" fill className="object-cover" />
                             </div>
 
                             <div className="relative h-[240px] -mt-13 rounded-2xl overflow-hidden">
-                                <Image src="/investment-growth.png" alt="Image 3" fill className="object-cover" />
+                                <Image src="/smart-city.png" alt="Image 3" fill className="object-cover" />
                             </div>
 
                             <div className="relative h-[220px] rounded-2xl overflow-hidden">
-                                <Image src="/vrindavancity.jpeg" alt="Image 4" fill className="object-cover" />
+                                <Image src="/airport.png" alt="Image 4" fill className="object-cover" />
                             </div>
 
                         </div>
@@ -161,13 +161,13 @@ export default function DholeraCity() {
             </section>
 
             {/* Location Advantages Section */}
-            <section className="pb-24">
+            <section className="pb-16 md:pb-20">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         {/* Image */}
                         {/* Content */}
                         <motion.div
-                            initial={{ opacity: 0, x: 10 }}
+                            initial={{ opacity: 0, x: 0 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
@@ -197,7 +197,7 @@ export default function DholeraCity() {
                             </div>
                         </motion.div>
                         <motion.div
-                            initial={{ opacity: 0, x: -30 }}
+                            initial={{ opacity: 0, x: 0 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
@@ -205,7 +205,7 @@ export default function DholeraCity() {
                         >
                             <div className="relative rounded-2xl overflow-hidden shadow-xl">
                                 <Image
-                                    src="/location.jpeg"
+                                    src="/new-map.png"
                                     alt="Dholera Location Connectivity Map"
                                     width={400}
                                     height={400}
@@ -213,9 +213,9 @@ export default function DholeraCity() {
                                 />
                             </div>
                             {/* Floating Badge */}
-                            <div className="absolute -bottom-3 -right-4 bg-gradient-to-br from-zinc-600 to-zinc-700 text-white p-3 rounded-xl shadow-xl">
-                                <p className="text-sm font-medium">Strategic Location</p>
-                                <p className="text-md font-bold">Excellent Connectivity</p>
+                            <div className="absolute -bottom-3 -right-4 bg-zinc-900 text-white p-2 md:p-3 rounded-xl shadow-xl">
+                                <p className="md:text-sm text-xs font-medium">Strategic Location</p>
+                                <p className="md:text-sm text-xs font-medium">Excellent Connectivity</p>
                             </div>
                         </motion.div>
                     </div>
@@ -223,9 +223,8 @@ export default function DholeraCity() {
             </section>
 
             {/* Why Invest Section */}
-            <section className="pb-20 text-slate-900">
+            <section className="pb-16 md:pb-20 text-slate-900">
                 <div className="max-w-7xl mx-auto px-6">
-
                     {/* Header */}
                     <div className="max-w-3xl mx-auto text-center mb-10">
                         <span className="text-xs tracking-widest uppercase text-slate-500">
@@ -233,7 +232,7 @@ export default function DholeraCity() {
                         </span>
 
                         <h2 className="mt-4 text-3xl md:text-4xl font-semibold leading-tight">
-                            Why Investors Choose Vrindavan City, Dholera
+                            Why Investors Choose Dholera ?
                         </h2>
 
                         <p className="mt-4 text-slate-600 text-base md:text-lg">
@@ -280,115 +279,117 @@ export default function DholeraCity() {
                 </div>
             </section>
 
-            <section className="relative mb-24 overflow-hidden">
-                {/* Background Image */}
-                <div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: "url('/promo-bg.png')" }}
-                />
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-blue-900/80 to-amber-900/70" />
+            <section className="pb-12 md:pb-20">
+                <div className="relative overflow-hidden">
+                    {/* Background Image */}
+                    <div
+                        className="absolute inset-0 bg-cover bg-center"
+                        style={{ backgroundImage: "url('/promo-bg.png')" }}
+                    />
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-blue-900/80 to-amber-900/70" />
 
-                {/* Content */}
-                <div className="relative z-10 px-6 py-14 text-center">
-                    {/* Badge */}
-                    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6 shadow-lg shadow-amber-500/30">
-                        <span className="animate-pulse">🔥</span>
-                        <span>LIMITED-TIME OFFER</span>
-                    </div>
+                    {/* Content */}
+                    <div className="relative z-10 px-6 py-14 text-center">
+                        {/* Badge */}
+                        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6 shadow-md">
+                            <span className="animate-pulse">🔥</span>
+                            <span>LIMITED-TIME OFFER</span>
+                        </div>
 
-                    {/* Main Heading */}
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-                        Get a Flat <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-300">₹1,00,000</span> Discount
-                    </h2>
+                        {/* Main Heading */}
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+                            Get a Flat <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-300">₹1,00,000</span> Discount
+                        </h2>
 
-                    {/* Sub-heading */}
-                    <p className="text-lg md:text-xl text-blue-100/90 mb-3 max-w-2xl mx-auto">
-                        Book your plot before <strong className="text-amber-300">31st January 2026</strong> and unlock this exclusive offer!
-                    </p>
-                    <p className="text-base text-blue-200/70 mb-8 max-w-xl mx-auto">
-                        Enter your email address and we&apos;ll send you a discount code.
-                    </p>
+                        {/* Sub-heading */}
+                        <p className="text-lg md:text-xl text-blue-100/90 mb-3 max-w-2xl mx-auto">
+                            Book your plot before <strong className="text-amber-300">31st January 2026</strong> and unlock this exclusive offer!
+                        </p>
+                        <p className="text-base text-blue-200/70 mb-8 max-w-xl mx-auto">
+                            Enter your email address and we&apos;ll send you a discount code.
+                        </p>
 
-                    {/* Email Form - Glassmorphism Card */}
-                    <div className="max-w-lg mx-auto backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 md:p-8 shadow-2xl">
-                        {submitStatus === "success" ? (
-                            <div className="text-center">
-                                <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <CheckCircle2 className="w-8 h-8 text-green-400" />
-                                </div>
-                                <p className="text-white font-semibold mb-2">{statusMessage}</p>
-                                <div className="bg-white/20 rounded-lg px-4 py-3 mt-4">
-                                    <p className="text-amber-300 text-sm mb-1">Your Discount Code:</p>
-                                    <p className="text-2xl font-bold text-white tracking-wider">{discountCode}</p>
-                                </div>
-                                <p className="text-blue-200/60 text-xs mt-4">
-                                    Save this code! Use it while booking your plot.
-                                </p>
-                            </div>
-                        ) : (
-                            <form onSubmit={handleDiscountSubmit}>
-                                <div className="flex flex-col sm:flex-row gap-3">
-                                    <input
-                                        type="email"
-                                        placeholder="Enter your email address"
-                                        value={email}
-                                        onChange={(e) => setEmail(e.target.value)}
-                                        disabled={isSubmitting}
-                                        className="flex-1 px-5 py-3.5 rounded-xl bg-white/90 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-amber-400 focus:ring-offset-1 focus:ring-offset-transparent shadow-lg text-base disabled:opacity-50 disabled:cursor-not-allowed"
-                                    />
-                                    <button
-                                        type="submit"
-                                        disabled={isSubmitting}
-                                        className="px-8 py-3.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-semibold rounded-xl shadow-md transition-all duration-300 hover:scale-101 cursor-pointer flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
-                                    >
-                                        {isSubmitting ? (
-                                            <>
-                                                <Loader2 className="h-5 w-5 animate-spin" />
-                                                <span>Sending...</span>
-                                            </>
-                                        ) : (
-                                            <>
-                                                <span>Send</span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                                                </svg>
-                                            </>
-                                        )}
-                                    </button>
-                                </div>
-                                {submitStatus === "error" && statusMessage && (
-                                    <p className="text-red-300 text-sm mt-3 text-center">
-                                        ⚠️ {statusMessage}
+                        {/* Email Form - Glassmorphism Card */}
+                        <div className="max-w-lg mx-auto backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 md:p-8 shadow-2xl">
+                            {submitStatus === "success" ? (
+                                <div className="text-center">
+                                    <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <CheckCircle2 className="w-8 h-8 text-green-400" />
+                                    </div>
+                                    <p className="text-white font-semibold mb-2">{statusMessage}</p>
+                                    <div className="bg-white/20 rounded-lg px-4 py-3 mt-4">
+                                        <p className="text-amber-300 text-sm mb-1">Your Discount Code:</p>
+                                        <p className="text-2xl font-bold text-white tracking-wider">{discountCode}</p>
+                                    </div>
+                                    <p className="text-blue-200/60 text-xs mt-4">
+                                        Save this code! Use it while booking your plot.
                                     </p>
-                                )}
-                                <p className="text-xs text-blue-200/60 mt-3">
-                                    🔒 We respect your privacy. No spam, ever.
-                                </p>
-                            </form>
-                        )}
-                    </div>
+                                </div>
+                            ) : (
+                                <form onSubmit={handleDiscountSubmit}>
+                                    <div className="flex flex-col sm:flex-row gap-3">
+                                        <input
+                                            type="email"
+                                            placeholder="Enter your email address"
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
+                                            disabled={isSubmitting}
+                                            className="flex-1 px-5 py-3.5 rounded-xl bg-white/90 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-amber-400 focus:ring-offset-1 focus:ring-offset-transparent shadow-lg text-base disabled:opacity-50 disabled:cursor-not-allowed"
+                                        />
+                                        <button
+                                            type="submit"
+                                            disabled={isSubmitting}
+                                            className="px-8 py-3.5 bg-gradient-to-r from-amber-600 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-semibold rounded-xl shadow-md transition-all duration-300 hover:scale-101 cursor-pointer flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                                        >
+                                            {isSubmitting ? (
+                                                <>
+                                                    <Loader2 className="h-5 w-5 animate-spin" />
+                                                    <span>Sending...</span>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <span>Send</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                                    </svg>
+                                                </>
+                                            )}
+                                        </button>
+                                    </div>
+                                    {submitStatus === "error" && statusMessage && (
+                                        <p className="text-red-300 text-sm mt-3 text-center">
+                                            ⚠️ {statusMessage}
+                                        </p>
+                                    )}
+                                    <p className="text-xs text-blue-200/60 mt-3">
+                                        🔒 We respect your privacy. No spam, ever.
+                                    </p>
+                                </form>
+                            )}
+                        </div>
 
-                    {/* Trust Indicators */}
-                    <div className="flex flex-wrap justify-center gap-6 md:gap-10 mt-10 text-blue-100/80 text-sm">
-                        <div className="flex items-center gap-2">
-                            <span className="text-green-400">✓</span>
-                            <span>Instant Code Delivery</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <span className="text-green-400">✓</span>
-                            <span>No Hidden Charges</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <span className="text-green-400">✓</span>
-                            <span>100% Genuine</span>
+                        {/* Trust Indicators */}
+                        <div className="flex flex-wrap justify-center gap-6 md:gap-10 mt-10 text-blue-100/80 text-sm">
+                            <div className="flex items-center gap-2">
+                                <span className="text-green-400">✓</span>
+                                <span>Instant Code Delivery</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <span className="text-green-400">✓</span>
+                                <span>No Hidden Charges</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <span className="text-green-400">✓</span>
+                                <span>100% Genuine</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Legal Transparency Section */}
-            <section className="pb-24">
+            <section className="pb-16 md:pb-24">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         {/* Content */}
@@ -397,7 +398,7 @@ export default function DholeraCity() {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                         >
-                            <span className="text-teal-600 font-semibold text-sm uppercase tracking-wider">100% Legal & Verified</span>
+                            {/* <span className="text-teal-600 font-semibold text-sm uppercase tracking-wider">100% Legal & Verified</span> */}
                             <h2 className="text-3xl font-bold text-slate-800 mt-2 mb-3">
                                 Worried About Fake or Illegal Dholera Projects ?
                             </h2>
@@ -432,14 +433,14 @@ export default function DholeraCity() {
 
                         {/* Image/Illustration */}
                         <motion.div
-                            initial={{ opacity: 0, x: 10 }}
+                            initial={{ opacity: 0, x: 0 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             className="relative"
                         >
                             <div className="relative rounded-2xl overflow-hidden shadow-xl">
                                 <Image
-                                    src="/dholera-3.jfif"
+                                    src="/fake.png"
                                     alt="Dholera Plot Layout"
                                     width={600}
                                     height={400}
@@ -447,12 +448,12 @@ export default function DholeraCity() {
                                 />
                             </div>
                             {/* Trust Badge */}
-                            <div className="absolute -top-4 -left-4 bg-white p-4 rounded-xl shadow-xl border border-slate-100">
+                            <div className="absolute -top-4 -left-4 bg-white p-2 md:p-4 rounded-xl shadow-xl border border-slate-100">
                                 <div className="flex items-center gap-2">
-                                    <Shield className="w-8 h-8 text-emerald-500" />
+                                    <Shield className="w-6 h-6 md:w-8 md:h-8 text-emerald-500" />
                                     <div>
                                         <p className="text-xs text-slate-500">Verified</p>
-                                        <p className="font-bold text-slate-800">100% Legal</p>
+                                        <p className="text-md font-bold text-slate-800">100% Legal</p>
                                     </div>
                                 </div>
                             </div>
@@ -462,13 +463,13 @@ export default function DholeraCity() {
             </section>
 
             {/* Why Dholera Section */}
-            <section className="">
+            <section className="pb-16 md:pb-20">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="">
 
                         {/* Content */}
                         <motion.div
-                            initial={{ opacity: 0, x: 10 }}
+                            initial={{ opacity: 0, x: 0 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             className="order-1 lg:order-2"
@@ -510,13 +511,13 @@ export default function DholeraCity() {
             </section>
 
             {/* Site Visit Section */}
-            <section className="py-16 md:py-20 relative overflow-hidden">
+            <section className="pb-16 md:pb-20 relative overflow-hidden">
                 {/* Background Decoration */}
                 <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-orange-100 to-amber-100 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2" />
 
                 <div className="max-w-7xl mx-auto px-6 relative">
                     <motion.div
-                        initial={{ opacity: 0, y: 10 }}
+                        initial={{ opacity: 0, y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         className="max-w-3xl mx-auto text-center"
@@ -549,7 +550,7 @@ export default function DholeraCity() {
                             ))}
                         </div>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLScCZ4gBORMpf-dEYejXNUaIJ2KhXEAy___O7-jler97Ioe4OA/viewform" target="_blank" rel="noopener noreferrer">
-                            <button className="group inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg shadow-orange-500/30">
+                            <button className="group inline-flex items-center gap-2 bg-orange-600 text-white px-8 py-4 rounded-xl font-semibold shadow-md">
                                 <Calendar className="w-5 h-5" />
                                 Request Site Visit Details
                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -570,7 +571,7 @@ export default function DholeraCity() {
 
                 <div className="relative max-w-6xl mx-auto px-6">
                     <motion.div
-                        initial={{ opacity: 0, y: 10 }}
+                        initial={{ opacity: 0, y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -580,7 +581,7 @@ export default function DholeraCity() {
                             Limited Opportunity
                         </span>
 
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-4">
+                        <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-4">
                             Prices Rise Quietly <br className="hidden sm:block" />
                             Before They Rise Suddenly
                         </h2>
@@ -620,7 +621,7 @@ export default function DholeraCity() {
 
 
             {/* Final CTA Section */}
-            <section className="relative py-20 text-slate-900 overflow-hidden">
+            <section className="relative py-16 md:py-20 text-slate-900 overflow-hidden">
 
                 {/* Soft background accents */}
                 <div className="absolute inset-0 pointer-events-none">
@@ -630,7 +631,7 @@ export default function DholeraCity() {
 
                 <div className="relative max-w-4xl mx-auto px-6 text-center">
                     <motion.div
-                        initial={{ opacity: 0, y: 10 }}
+                        initial={{ opacity: 0, y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -639,7 +640,7 @@ export default function DholeraCity() {
                             Guided Assistance
                         </span>
 
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-5">
+                        <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-5">
                             We Help You Navigate <br className="hidden sm:block" />
                             Pricing, Documents & Decisions
                         </h2>
