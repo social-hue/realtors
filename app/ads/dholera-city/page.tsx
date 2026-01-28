@@ -180,8 +180,8 @@ export default function DholeraCity() {
                             <div className="space-y-1">
                                 {[
                                     { icon: MapPin, text: "State Highway", distance: "700 mtr", color: "text-zinc-600" },
-                                    { icon: Building2, text: "Ahmedabad Dholera Expressway", distance: "1 km", color: "text-zinc-600" },
-                                    { icon: Train, text: "Monorail Station", distance: "1 km", color: "text-zinc-600" },
+                                    { icon: Building2, text: "Ahmedabad Dholera Expressway", distance: "800 mtr", color: "text-zinc-600" },
+                                    { icon: Train, text: "Monorail Station", distance: "800 mtr", color: "text-zinc-600" },
                                     { icon: Plane, text: "International Airport", distance: "5 km", color: "text-zinc-600" },
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-center gap-2">
@@ -306,7 +306,7 @@ export default function DholeraCity() {
 
                         {/* Sub-heading */}
                         <p className="text-lg md:text-xl text-blue-100/90 mb-3 max-w-2xl mx-auto">
-                            Book your plot before <strong className="text-amber-300">31st January 2026</strong> and unlock this exclusive offer!
+                            Book your plot before <strong className="text-amber-300">10th February, 2026</strong> and unlock this exclusive offer!
                         </p>
                         <p className="text-base text-blue-200/70 mb-8 max-w-xl mx-auto">
                             Enter your email address and we&apos;ll send you a discount code.
