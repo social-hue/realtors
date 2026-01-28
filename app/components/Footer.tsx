@@ -1,7 +1,7 @@
 "use client";
 import { Menu, X, MapPin, ArrowRight, Phone, Mail, Instagram, Linkedin, Facebook, CheckCircle2 } from 'lucide-react';
 import { useState } from 'react';
- 
+
 export default function Footer() {
 
   const [email, setEmail] = useState("");
@@ -32,7 +32,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-slate-900 text-white pt-20 pb-10">
+      <footer className="bg-slate-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
 
@@ -60,13 +60,29 @@ export default function Footer() {
               <h4 className="font-bold text-amber-500 mb-6 uppercase tracking-wider text-sm">Contact Us</h4>
               <ul className="space-y-4 text-slate-300 text-sm">
                 <li className="flex items-center gap-3">
-                  <Phone className="w-4 h-4" /> +917838697921
+                  <Phone className="w-4 h-4" /> +917838697921, +918860018278
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4" /> info@umangrealtors.com
                 </li>
-                <li className="flex items-center gap-3">
-                  <MapPin className="w-4 h-4" /> 2319, Gold Wing, Wave One, Noida - 201301
+                <li className="flex items-start gap-3">
+                  <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold text-amber-400">Head Office:</span><br />
+                    2319, Gold Wing, Wave One, Noida - 201301
+                  </div>
+                </li>
+                <li className="md:hidden flex items-start gap-3">
+                  <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
+                  <div>
+                   B-701, 7th Floor West Gate, By True Value Tower, Nr YMCA Club, SG Highway, Ahmedabad, 380015
+                  </div> 
+                </li>
+                <li className="md:hidden flex items-start gap-3">
+                  <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
+                  <div>
+                    Near Novotel Hotel, 1305-A, Mondeal Heights, Sarkhej – Gandhinagar Hwy, Ahmedabad, Gujarat 380015
+                  </div>
                 </li>
               </ul>
             </div>
@@ -113,13 +129,13 @@ export default function Footer() {
               </div>
               <div className="flex gap-4 mt-8">
                 <a target='_blank' href="https://www.facebook.com/profile.php?id=61585655565269">
-                <Facebook className="w-5 h-5 text-slate-400 hover:text-white cursor-pointer transition-colors" />
-                </a>    
+                  <Facebook className="w-5 h-5 text-slate-400 hover:text-white cursor-pointer transition-colors" />
+                </a>
                 <a target='_blank' href="https://www.linkedin.com/company/vrindavan-city-dholera-smart-choice-in-real-estate/">
-                <Linkedin className="w-5 h-5 text-slate-400 hover:text-white cursor-pointer transition-colors" />
+                  <Linkedin className="w-5 h-5 text-slate-400 hover:text-white cursor-pointer transition-colors" />
                 </a>
                 <a target='_blank' href="https://www.instagram.com/umangrealtorsnoida/">
-                <Instagram className="w-5 h-5 text-slate-400 hover:text-white cursor-pointer transition-colors" />
+                  <Instagram className="w-5 h-5 text-slate-400 hover:text-white cursor-pointer transition-colors" />
                 </a>
               </div>
             </div>
