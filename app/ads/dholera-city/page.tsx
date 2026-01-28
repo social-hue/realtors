@@ -123,7 +123,7 @@ export default function DholeraCity() {
                                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                     </button>
                                 </a>
-                                <a href="https://wa.me/918860018278?text=Hello%20I%20am%20interested%20in%20Vrindavan%20City%20Dholera%20Please%20Share%20Details" target="_blank"
+                                <a href="https://wa.me/917303789661?text=Hello%20I%20am%20interested%20in%20Vrindavan%20City%20Dholera%20Please%20Share%20Details" target="_blank"
                                     rel="noopener noreferrer">
                                     <button className="cursor-pointer flex items-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold">
                                         <MessageCircle className="w-5 h-5" />
@@ -139,19 +139,19 @@ export default function DholeraCity() {
                         <div className="grid grid-cols-2 gap-3">
 
                             <div className="relative h-[220px] rounded-2xl overflow-hidden">
-                                <Image src="/plot-lands.png" alt="Image 1" fill className="object-cover" />
+                                <Image src="/compressed_plot-lands.webp" alt="Image 1" fill className="object-cover" />
                             </div>
 
                             <div className="relative h-[240px] mt-8 rounded-2xl overflow-hidden">
-                                <Image src="/investment.png" alt="Image 2" fill className="object-cover" />
+                                <Image src="/compressed_investment.webp" alt="Image 2" fill className="object-cover" />
                             </div>
 
                             <div className="relative h-[240px] -mt-13 rounded-2xl overflow-hidden">
-                                <Image src="/smart-city.png" alt="Image 3" fill className="object-cover" />
+                                <Image src="/compressed_smart-city.webp" alt="Image 3" fill className="object-cover" />
                             </div>
 
                             <div className="relative h-[220px] rounded-2xl overflow-hidden">
-                                <Image src="/airport.png" alt="Image 4" fill className="object-cover" />
+                                <Image src="/compressed_airport.webp" alt="Image 4" fill className="object-cover" />
                             </div>
 
                         </div>
@@ -204,13 +204,15 @@ export default function DholeraCity() {
                             className="relative"
                         >
                             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                                <Image
-                                    src="/new-map.png"
-                                    alt="Dholera Location Connectivity Map"
-                                    width={400}
-                                    height={400}
-                                    className="w-full h-auto"
-                                />
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScCZ4gBORMpf-dEYejXNUaIJ2KhXEAy___O7-jler97Ioe4OA/viewform" rel="noopener noreferrer" target="_blank">
+                                    <Image
+                                        src="/compressed_new-map.webp"
+                                        alt="Dholera Location Connectivity Map"
+                                        width={400}
+                                        height={400}
+                                        className="w-full h-auto"
+                                    />
+                                </a>
                             </div>
                             {/* Floating Badge */}
                             <div className="absolute -bottom-3 -right-4 bg-zinc-900 text-white p-2 md:p-3 rounded-xl shadow-xl">
@@ -268,7 +270,7 @@ export default function DholeraCity() {
 
                     {/* CTA */}
                     <div className="mt-10 text-center">
-                        <a href="tel:918860018278">
+                        <a href="tel:917303789661">
                             <button className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-slate-900 border border-slate-900 px-8 py-3 text-sm font-medium text-slate-900 hover:text-slate-900 hover:bg-white text-white transition">
                                 <Phone className="w-4 h-4" />
                                 Schedule a Call
@@ -421,7 +423,7 @@ export default function DholeraCity() {
                                     </div>
                                 ))}
                             </div>
-                            <a href="https://wa.me/918860018278" target="_blank"
+                            <a href="https://wa.me/917303789661" target="_blank"
                                 rel="noopener noreferrer">
                                 <button className="cursor-pointer group inline-flex items-center gap-1 bg-teal-600 hover:bg-emerald-600 text-emerald-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300">
                                     <FileCheck className="w-5 h-5" />
@@ -439,13 +441,15 @@ export default function DholeraCity() {
                             className="relative"
                         >
                             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                                <Image
-                                    src="/fake.png"
-                                    alt="Dholera Plot Layout"
-                                    width={600}
-                                    height={400}
-                                    className="w-full h-auto object-cover"
-                                />
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScCZ4gBORMpf-dEYejXNUaIJ2KhXEAy___O7-jler97Ioe4OA/viewform" rel="noopener noreferrer" target="_blank">
+                                    <Image
+                                        src="/compressed_fake.webp"
+                                        alt="Dholera Plot Layout"
+                                        width={600}
+                                        height={400}
+                                        className="w-full h-auto object-cover"
+                                    />
+                                </a>
                             </div>
                             {/* Trust Badge */}
                             <div className="absolute -top-4 -left-4 bg-white p-2 md:p-4 rounded-xl shadow-xl border border-slate-100">
@@ -513,7 +517,7 @@ export default function DholeraCity() {
             {/* Site Visit Section */}
             <section className="pb-16 md:pb-20 relative overflow-hidden">
                 {/* Background Decoration */}
-                <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-orange-100 to-amber-100 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2" />
+                <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2" />
 
                 <div className="max-w-7xl mx-auto px-6 relative">
                     <motion.div
@@ -657,7 +661,7 @@ export default function DholeraCity() {
                                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                                 </button>
                             </a>
-                            <a href="https://wa.me/918860018278" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/917303789661" target="_blank" rel="noopener noreferrer">
                                 <button className="cursor-pointer group inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-7 py-3.5 text-sm font-medium text-slate-700 transition-all hover:border-slate-400 hover:bg-slate-50">
                                     <Calendar className="h-4 w-4" />
                                     Request Site Visit
