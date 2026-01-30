@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Building2, ShieldCheck, Users, FileText } from "lucide-react";
+import PriceChart from "./Chart";
 
 const services = [
   {
@@ -25,7 +26,7 @@ const services = [
     description:
       "From discovery to final possession, we manage the entire process so you can move forward with confidence.",
     icon: FileText,
-  },
+  },   
 ];
 
 export default function AboutPage() {
@@ -47,6 +48,7 @@ export default function AboutPage() {
 
           {/* Founder Content */}
           <div>
+
             <p className="mb-3 text-sm uppercase tracking-widest text-amber-600">
               About the Founder
             </p>
@@ -74,7 +76,7 @@ export default function AboutPage() {
             To make real estate decisions simpler, safer, and more meaningful.
           </h2>
           <p className="mx-auto max-w-3xl text-md leading-relaxed text-neutral-600">
-            Our mission is to guide clients through one of life’s most important
+            Our mission is to guide clients through one of life&apos;s most important
             decisions with clarity and confidence. We aim to remove complexity,
             eliminate misinformation, and ensure every client feels informed and
             supported at every stage of their journey.
@@ -111,6 +113,11 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
+
+        {/* <div className="mt-12 w-[50%]">
+          <PriceChart />
+        </div> */}
+        
       </section>
     </main>
   );

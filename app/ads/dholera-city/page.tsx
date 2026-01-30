@@ -566,7 +566,7 @@ export default function DholeraCity() {
 
             {/* Price Appreciation Section */}
 
-            <section className="relative py-12 bg-gradient-to-b from-slate-950 to-slate-950 text-white overflow-hidden">
+            <section className="relative py-12 bg-slate-900 text-white overflow-hidden">
 
                 {/* Soft ambient glow */}
                 <div className="absolute inset-0">
@@ -621,6 +621,7 @@ export default function DholeraCity() {
                         </a>
                     </motion.div>
                 </div>
+
             </section>
 
 
@@ -634,6 +635,7 @@ export default function DholeraCity() {
                 </div>
 
                 <div className="relative max-w-4xl mx-auto px-6 text-center">
+
                     <motion.div
                         initial={{ opacity: 0, y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -670,6 +672,7 @@ export default function DholeraCity() {
                         </div>
                     </motion.div>
                 </div>
+                
             </section>
 
         </div>
