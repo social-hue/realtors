@@ -6,6 +6,7 @@ import "./globals.css";
 import CTA from "./components/CTA";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ExpresswayPopup from "./components/ExpresswayPopup";
 
 // 2. Configure them
 
@@ -49,6 +50,7 @@ export default function RootLayout({
         <Toaster position="top-right" />
         <Footer />
         <CTA />
+        <ExpresswayPopup />
         <Analytics />
       </body>
     </html>
