@@ -34,7 +34,7 @@ export default function Footer() {
     <>
       <footer className="bg-slate-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-8">
 
             {/* Brand */}
             <div className="space-y-6">
@@ -148,6 +148,7 @@ export default function Footer() {
               <a href="/terms-condition" className="hover:text-slate-300">Terms of Service</a>
             </div>
           </div>
+
         </div>
       </footer>
     </>

@@ -68,7 +68,7 @@ export default function AboutPage() {
 
       {/* ================= Mission Section ================= */}
       <section className="border-t border-neutral-200 bg-white">
-
+        
         <div className="mx-auto max-w-4xl px-6 py-12 text-center">
           <p className="mb-3 text-sm uppercase tracking-widest text-amber-600">
             Our Mission
