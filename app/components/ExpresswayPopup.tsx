@@ -1,6 +1,6 @@
 "use client";
-import { useState, useEffect } from "react";
-import { X } from "lucide-react";
+import { useState, useEffect } from "react";            
+import { X } from "lucide-react";                          
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function ExpresswayPopup() {
@@ -41,18 +41,18 @@ export default function ExpresswayPopup() {
                         {/* Close Button - Clean White Circle */}
                         <button
                             onClick={handleClose}
-                            className="absolute -top-3 -right-3 z-50 p-2 bg-white text-black rounded-full shadow-2xl hover:bg-neutral-100 transition-colors border border-neutral-100 cursor-pointer"
+                            className="absolute -top-3 -right-3 z-50 p-2 bg-white text-black rounded-full shadow-xl hover:bg-neutral-100 transition-colors border border-neutral-100 cursor-pointer"
                             aria-label="Close"
                         >
                             <X className="w-5 h-5" />
                         </button>
 
                         {/* Raw Image Container */}
-                        <div className="relative overflow-hidden rounded-2xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)]">
+                        <div className="relative overflow-hidden rounded-xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.4)]">
                             <img
                                 src="/expressway.png"
                                 alt="Ahmedabad-Dholera Expressway"
-                                className="max-w-full max-h-[85vh] object-contain block rounded-2xl"
+                                className="max-w-full max-h-[85vh] object-contain block rounded-xl"
                             />
                         </div>
                     </motion.div>

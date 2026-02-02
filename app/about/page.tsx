@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'Learn about Umang Realtors, founded by Mr. Sanjay Bhardwaj. We specialize in transparent, trust-based real estate services in Dholera SIR. Our mission: making property decisions simpler, safer, and more meaningful with end-to-end support.',
   keywords: [
     'Umang Realtors',
-    'Sanjay Bhardwaj',
+    'Sanjayy Bhardwajj',
     'Dholera real estate company',
     'about Umang Realtors',
     'real estate advisory Gujarat',

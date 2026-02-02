@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function TermsAndConditionsPage() {
   return (
     
-    <main className="mt-4 max-w-7xl mx-auto px-6 py-16 text-gray-800">
+    <main className="max-w-7xl mx-auto px-6 py-6 mb-8 text-gray-800">
       <h1 className="text-4xl font-semibold mb-2">Terms & Conditions</h1>
       <p className="text-sm text-gray-500 mb-8">
         Last updated: <span className="font-medium">{new Date().toLocaleDateString()}</span>

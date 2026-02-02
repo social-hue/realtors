@@ -7,10 +7,8 @@ const Project = () => {
 
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900 selection:bg-amber-500 selection:text-white">
-      {/* --- Navigation --- */}
-
       {/* --- Hero Section --- */}
-      <section className="relative h-screen 2xl:h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
 
         <div className="absolute inset-0 bg-slate-900">
           <video
@@ -27,6 +25,7 @@ const Project = () => {
         {/* Abstract Background Image/Overlay */}
 
         <div className="relative z-10 text-center max-w-4xl px-6 animate-fade-in-up">
+
           <span className="inline-block mt-4 py-1 px-3 border border-amber-500/50 rounded-full text-amber-400 text-xs font-bold tracking-[0.2em] uppercase mb-6 bg-amber-900/20 backdrop-blur-sm">
             India's First Green Smart City
           </span>
@@ -57,12 +56,11 @@ const Project = () => {
             </a>
           </div>
         </div>
-
       </section>
 
       <section id="vision" className="mt-8 md:mt-0 md:py-16 bg-white overflow-hidden">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-4 items-center max-w-7xl mx-auto px-6">
-
+ 
           {/* Text Content */}
           <div className="space-y-8 md:w-[50%]">
             <h2 className="text-4xl font-medium text-slate-900">
@@ -88,12 +86,10 @@ const Project = () => {
               ))}
             </ul>
           </div>
-
           {/* THE 9:16 VIDEO PLACEHOLDER */}
           <div className="flex justify-center">
             <img src="/vrindavancity.jpeg" className='object-cover rounded-md' alt="object" />
           </div>
-
         </div>
       </section>
 
@@ -124,16 +120,14 @@ const Project = () => {
               ))}
             </ul>
           </div>
-
           {/* THE 9:16 VIDEO PLACEHOLDER */}
-
         </div>
       </section>
 
       <section className="max-w-7xl bg-white mx-auto px-6 py-4 pb-12">
         <Gallery />
       </section>
-
+                                                                      
       {/* --- Master Plan / Plot Map Section --- */}
       <section id="master-plan" className="py-12 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
