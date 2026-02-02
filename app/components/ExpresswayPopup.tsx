@@ -50,7 +50,7 @@ export default function ExpresswayPopup() {
                         {/* Raw Image Container */}
                         <div className="relative overflow-hidden rounded-xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.4)]">
                             <img
-                                src="/expressway.png"
+                                src="/expresswayy.png"
                                 alt="Ahmedabad-Dholera Expressway"
                                 className="max-w-full max-h-[85vh] object-contain block rounded-xl"
                             />

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ExploreProject() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-12 md:py-20">
+    <section className="max-w-7xl mx-auto px-6 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left Content */}
@@ -27,7 +27,7 @@ export default function ExploreProject() {
             connectivity to upcoming industrial and civic developments.
           </p>
 
-          <ul className="space-y-3 text-slate-700 mb-8">
+          <ul className="space-y-3 text-slate-700 mb-6">
             <li className="flex items-center gap-2">
               <span className="w-2 h-2 bg-amber-600 rounded-full" />
               NA & NOC approved residential plots

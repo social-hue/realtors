@@ -40,7 +40,7 @@ export default function Header() {
               className="px-6 py-2.5 bg-slate-900 text-white rounded-sm hover:bg-slate-800 transition-all duration-300 shadow-lg shadow-slate-900/20"
             >
               Inquire Now
-            </button> */}
+            </button> */}  
             <a href="tel:7838697921">
             <button
               className="w-full px-6 py-3 bg-slate-900 text-white rounded-sm hover:bg-slate-800 transition"
@@ -95,6 +95,6 @@ export default function Header() {
         </div> : <></>}
       </nav>
       <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-    </>
+    </> 
   )
 }

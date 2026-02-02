@@ -32,7 +32,7 @@ const features = [
 export default function WhyChooseUs() {
   return (
 
-    <section className="relative bg-[#fafafa] py-16">
+    <section className="relative bg-[#fafafa] py-12">
       <div className="mx-auto max-w-7xl px-6">
         {/* Heading */}
         <div className="mb-10 max-w-2xl">

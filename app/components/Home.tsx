@@ -3,14 +3,15 @@ import { Play, Menu, X, MapPin, ArrowRight, Phone, Mail, Instagram, Linkedin, Fa
 // import { useEffect, useState } from 'react';
 import ExploreProject from './ExploreProject';
 import WhyChooseUs from './WhyChooseUs';
+import NewsTicker from './NewsTicker';
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-amber-500 selection:text-white">
       {/* --- Navigation --- */}
       {/* --- Hero Section --- */}
-      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
-
+      <section>
+      <main className="relative h-[76vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-slate-900">
          <video
             className="absolute inset-0 w-full h-full object-cover"   
@@ -22,14 +23,12 @@ const Home = () => {
           />
           <div className="absolute inset-0 bg-linear-to-t from-slate-900/40 via-slate-900/60 to-transparent" />
         </div>
-
         {/* Abstract Background Image/Overlay */}
-
         <div className="relative z-10 text-center max-w-4xl px-6 animate-fade-in-up">
           <span className="inline-block mt-4 py-1 px-3 border border-amber-500/50 rounded-full text-amber-400 text-xs font-bold tracking-[0.2em] uppercase mb-6 bg-amber-900/20 backdrop-blur-sm">
            Real Estate • Trust • Growth
           </span>
-          <h1 className="text-4xl md:text-7xl font-medium text-white mb-6">
+          <h1 className="text-4xl md:text-6xl font-medium text-white mb-5">
             Invest in the <br />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-amber-200 to-amber-500">
               Future of India
@@ -53,7 +52,13 @@ const Home = () => {
               </button>
             </a> */}
           </div>
+
         </div>
+      </main>   
+      <div className="py-4 px-4 flex items-center justify-center">
+        <NewsTicker />
+      </div>
+
       </section>
       
       <ExploreProject />
