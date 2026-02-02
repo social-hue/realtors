@@ -2,7 +2,7 @@ import React from "react";
 
 export default function NewsTicker() {
   const newsItems = [
-    "📞 Call 9642535843 | Schedule Your Site Visit",
+    "📞 Call 7303789661 | Schedule Your Site Visit",
     "🎉 FREE Site Visit | From Ahmedabad To Dholera | Travel, Meals & Stay Included",
     // "📆 Launching this New Year"
   ];
