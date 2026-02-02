@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
       
-    <main className="mt-4 max-w-7xl mx-auto px-6 py-16 text-gray-800">
+    <main className="max-w-7xl mx-auto px-6 py-6 mb-8 text-gray-800">
       <h1 className="text-4xl font-semibold mb-2">Privacy Policy</h1>
       <p className="text-sm text-gray-500 mb-6">
         Last updated: <span className="font-medium">{new Date().toLocaleDateString()}</span>
@@ -22,8 +22,7 @@ export default function PrivacyPolicyPage() {
           personal information you share with us. This Privacy Policy explains
           how we collect, use, store, disclose, and safeguard your information
           when you visit our website or interact with our real estate services.
-        </p>
-                
+        </p>                
         <p>
           By accessing or using our website, you agree to the practices described
           in this Privacy Policy.

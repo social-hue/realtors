@@ -9,7 +9,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  useEffect(() => {
+  useEffect(() => {             
+
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
@@ -20,15 +21,15 @@ export default function Header() {
 
   return (
     <>
-      <nav className={`h-16 fixed top-0 left-0 right-0 z-50 transition-all shadow-sm bg-white duration-300 ${scrolled
+      <nav className={`h-16 sticky top-0 left-0 right-0 z-50 transition-all shadow-sm bg-white duration-300 ${scrolled
         ? "bg-white shadow-sm backdrop-blur-sm"
         : "bg-transparent"
         }`}>
         <div className="max-w-7xl mx-auto px-4 flex h-full items-center justify-between">
-          <a href="/">
-            <div className="flex items-center">
-              <img className='h-16 w-45 object-cover' src="/final.png" alt="logo" />
-            </div>
+          <a href="/">    
+            <div className="flex items-center">    
+              <img className='h-16 w-45 object-cover' src="/3.png" alt="logo" />
+            </div>                                                
           </a>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-slate-800">
             <a href="/about" className="hover:text-amber-600 transition-colors">About</a>
@@ -89,7 +90,7 @@ export default function Header() {
               className="w-full px-6 py-3 bg-slate-900 text-white rounded-sm hover:bg-slate-800 transition"
             >
               Inquire Now
-            </button> */}
+            </button> */} 
           </div>
         </div> : <></>}
       </nav>

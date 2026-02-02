@@ -9,7 +9,7 @@ const Home = () => {
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-amber-500 selection:text-white">
       {/* --- Navigation --- */}
       {/* --- Hero Section --- */}
-      <section className="relative h-screen 2xl:h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
 
         <div className="absolute inset-0 bg-slate-900">
          <video

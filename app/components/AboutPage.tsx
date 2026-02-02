@@ -7,10 +7,10 @@ const services = [
     title: "Residential & Commercial Sales",
     description:
       "We assist buyers and sellers with carefully evaluated residential and commercial properties, ensuring clarity and fair value.",
-    icon: Building2,
+    icon: Building2,           
   },
   {
-    title: "Property Investment Advisory",
+    title: "Property Investment Advisory",   
     description:
       "Strategic guidance for investors focused on long-term appreciation, location growth, and risk-aware decision making.",
     icon: ShieldCheck,
@@ -31,7 +31,7 @@ const services = [
 
 export default function AboutPage() {
   return (
-    <main className="mt-12">
+    <main>
       {/* ================= Founder Section ================= */}
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
@@ -68,6 +68,7 @@ export default function AboutPage() {
 
       {/* ================= Mission Section ================= */}
       <section className="border-t border-neutral-200 bg-white">
+
         <div className="mx-auto max-w-4xl px-6 py-12 text-center">
           <p className="mb-3 text-sm uppercase tracking-widest text-amber-600">
             Our Mission
@@ -82,6 +83,7 @@ export default function AboutPage() {
             supported at every stage of their journey.
           </p>
         </div>
+
       </section>
 
       {/* ================= Services Section ================= */}
