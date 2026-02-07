@@ -75,7 +75,7 @@ export default function DholeraCity() {
         <div className="min-h-screen">
 
             {/* Hero Section */}
-            <section className="relative py-20 md:py-24">
+            <section className="relative md:py-10 py-8 mb-10">
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 md:gap-16 items-center">
 
                     {/* LEFT — TEXT CONTENT */}
@@ -122,7 +122,7 @@ export default function DholeraCity() {
                                         Get Price & Plot Availability
                                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                     </button>
-                                </a>
+                                </a>      
                                 <a href="https://wa.me/917303789661?text=Hello%20I%20am%20interested%20in%20Vrindavan%20City%20Dholera%20Please%20Share%20Details" target="_blank"
                                     rel="noopener noreferrer">
                                     <button className="cursor-pointer flex items-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold">

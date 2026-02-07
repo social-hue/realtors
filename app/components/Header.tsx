@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className={`h-16 sticky top-0 left-0 right-0 z-50 transition-all shadow-sm bg-white duration-300 ${scrolled
+      <nav className={`h-17 sticky top-0 left-0 right-0 z-50 transition-all shadow-sm bg-white duration-300 ${scrolled
         ? "bg-white shadow-sm backdrop-blur-sm"
         : "bg-transparent"
         }`}>

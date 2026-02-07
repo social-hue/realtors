@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   creator: 'Umang Realtors',
   publisher: 'Umang Realtors',
   robots: {
-    index: true, 
+    index: true,                           
     follow: true,
     googleBot: {
       index: true,
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
         alt: 'Dholera SIR Real Estate Investment',
       },
     ],
-  },
+  }, 
   twitter: {
     card: 'summary_large_image',
     title: 'Invest in Dholera SIR | Premium Land Parcels in India\'s Future Smart City',
