@@ -43,7 +43,7 @@ export default function ExpresswayPopup() {
                             onClick={handleClose}
                             className="absolute -top-3 -right-3 z-50 p-2 bg-white text-black rounded-full shadow-xl hover:bg-neutral-100 transition-colors border border-neutral-100 cursor-pointer"
                             aria-label="Close"
-                        >
+                        > 
                             <X className="w-5 h-5" />
                         </button>
 

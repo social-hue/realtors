@@ -1,4 +1,5 @@
 "use client";
+
 import { Play, Menu, X, MapPin, ArrowRight, Phone, Mail, Instagram, Linkedin, Facebook, CheckCircle2 } from 'lucide-react';
 // import { useEffect, useState } from 'react';
 import ExploreProject from './ExploreProject';
@@ -8,17 +9,15 @@ import NewsTicker from './NewsTicker';
 const Home = () => {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-amber-500 selection:text-white">
-      {/* --- Navigation --- */}
-      {/* --- Hero Section --- */}
-      <section>
+
       <main className="relative h-[76vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-slate-900">
+        <div className="absolute inset-0 bg-slate-900">                                    
          <video
             className="absolute inset-0 w-full h-full object-cover"   
-            src="/vid10.mp4"
-            autoPlay
-            loop
-            muted
+            src="/vid10.mp4"  
+            autoPlay  
+            loop   
+            muted   
             playsInline 
           />
           <div className="absolute inset-0 bg-linear-to-t from-slate-900/40 via-slate-900/60 to-transparent" />
@@ -54,12 +53,11 @@ const Home = () => {
           </div>
 
         </div>
-      </main>   
+      </main>       
+
       <div className="py-4 px-4 flex items-center justify-center">
         <NewsTicker />
-      </div>
-
-      </section>
+      </div>                                                     
       
       <ExploreProject />
       {/* --- 9:16 Video Showcase Section --- */}
@@ -79,10 +77,9 @@ const Home = () => {
             </div>
           ))}
         </div>
-      </section>   
+      </section>
 
       <WhyChooseUs />
-
     </div>
   );
 };
@@ -104,7 +101,6 @@ export default Home;
 
 //         {/* Divider */}
 //         <div className="my-8 h-px w-full bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
-
 //         {/* Main Message */}
 //         <h2 className="text-2xl md:text-3xl font-medium text-gray-800">
 //           We’re Improving Your Experience
@@ -144,3 +140,13 @@ export default Home;
 //     </main>
 //   );
 // }
+
+
+
+
+
+
+
+
+
+

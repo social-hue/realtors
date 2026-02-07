@@ -34,28 +34,29 @@ const CustomTooltip = ({ active, payload, label }: { active?: boolean; payload?:
 // Custom legend component
 const CustomLegend = () => {
     return (
-        <div className="flex justify-center items-center gap-2 pt-4">
+        <div className="flex justify-center items-center gap-2 pb-2">
             <div className="w-3 h-3 rounded-full bg-gradient-to-r from-emerald-400 to-cyan-500"></div>
             <span className="text-slate-300 text-sm font-medium">Price Per Sqr.Yard</span>
         </div>
     );
-};
+}; 
 
 export default function PriceChart() {
     return (
-        <div className="w-full h-[420px] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-6 rounded-xl shadow-2xl border border-slate-700/30 relative overflow-hidden">
+        <div className="w-full h-[420px] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-lg shadow-xl border border-slate-700/30 relative overflow-hidden">
             {/* Decorative elements */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-cyan-500/10 rounded-full blur-3xl"></div>
 
             {/* Chart Title */}
-            <h3 className="text-white text-lg font-semibold mb-2 text-center tracking-wide">
+            <h3 className="text-white text-lg font-semibold mt-2 text-center tracking-wide">
                 Dholera Land Price Trend
             </h3>
-            <p className="text-slate-400 text-xs text-center mb-4">Historical price appreciation over time</p>
+            
+            <p className="text-slate-400 text-xs text-center">Historical price appreciation over time</p>
             <ResponsiveContainer width="100%" height="85%">
                 <AreaChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
-                    <defs>
+                    <defs> 
                         <linearGradient id="priceGradient" x1="0" y1="0" x2="0" y2="1">
                             <stop offset="0%" stopColor="#10b981" stopOpacity={0.4} />
                             <stop offset="50%" stopColor="#06b6d4" stopOpacity={0.2} />

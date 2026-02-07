@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react";                                                            
 
 export default function NewsTicker() {
   const newsItems = [
@@ -9,6 +9,7 @@ export default function NewsTicker() {
 
   return (
     <>
+
       <div className="w-full flex items-center gap-4 font-medium bg-white/90 backdrop-blur-sm px-4 py-2 shadow-sm border-1 border-zinc-400 overflow-hidden group">
         {/* Fixed heading */}
         <h3 className="hidden md:block text-lg font-semibold text-gray-800 whitespace-nowrap">
@@ -30,6 +31,7 @@ export default function NewsTicker() {
           {/* Gradient fade on right */}
           <div className="absolute top-0 right-0 w-10 h-full bg-gradient-to-l from-white/90 to-transparent pointer-events-none"></div>
         </div>
+        
       </div>
       <style jsx>{`
         @keyframes marquee {

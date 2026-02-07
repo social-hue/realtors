@@ -52,6 +52,7 @@ export default function WhyChooseUs() {
               key={index}
               className="group transition-all duration-300"
             >
+
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full border border-neutral-200 text-neutral-800">
                 <item.icon size={22} strokeWidth={1.5} />     
               </div>
@@ -60,9 +61,10 @@ export default function WhyChooseUs() {
                 {item.title}
               </h3>
 
-              <p className="text-sm leading-relaxed text-neutral-600">
+              <p className="text-md leading-relaxed text-neutral-600">
                 {item.description}
               </p>
+
             </div>
           ))}
         </div>
