@@ -10,14 +10,14 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-amber-500 selection:text-white">
 
-      <main className="relative h-[76vh] flex items-center justify-center overflow-hidden">
+      <main className="relative h-[75vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-slate-900">                                    
          <video
             className="absolute inset-0 w-full h-full object-cover"   
             src="/vid10.mp4"  
-            autoPlay  
-            loop   
-            muted   
+            autoPlay    
+            loop        
+            muted       
             playsInline 
           />
           <div className="absolute inset-0 bg-linear-to-t from-slate-900/40 via-slate-900/60 to-transparent" />
@@ -55,7 +55,7 @@ const Home = () => {
         </div>
       </main>       
 
-      <div className="py-4 px-4 flex items-center justify-center">
+      <div className="px-4 flex items-center justify-center">
         <NewsTicker />
       </div>                                                     
       
