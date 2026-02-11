@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Building2, TrendingUp, Search, Layers, ArrowUpRight } from 'lucide-react';
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Services() {
     const services = [
@@ -43,7 +44,9 @@ export default function Services() {
             </div>
 
             <div className="max-w-6xl mx-auto relative z-10">
-                <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-6">
+                <motion.div initial={{ opacity: 0, y: 10 }}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{ duration: 0.8 }} className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-6">
                     <div className="max-w-2xl">
                         <span className="text-amber-600 font-bold tracking-wider uppercase text-sm mb-2 block">
                             Our Expertise
@@ -57,11 +60,13 @@ export default function Services() {
                     <p className="text-slate-500 max-w-md text-base leading-relaxed pb-2">
                         Providing comprehensive solutions for all your real estate needs with a focus on trust and transparency.
                     </p>
-                </div>
+                </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {services.map((service, index) => (
-                        <div
+                        <motion.div initial={{ opacity: 0, y: 10 }}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{ duration: 0.8 }}
                             key={index}
                             className="bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col h-full group"
                         >
@@ -89,7 +94,7 @@ export default function Services() {
                                     {service.description}
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
