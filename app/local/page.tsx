@@ -14,6 +14,9 @@ import {
     Briefcase
 } from "lucide-react";
 import NewsTicker from "../components/NewsTicker";
+import Services from "../components/Services";
+import About from "../components/About";
+import FeaturedProject from "../components/FeaturedProject";
 
 const stats = [
     {
@@ -68,20 +71,15 @@ export default function Local() {
     }, []);
 
     return (<>
-        <main className="min-h-screen bg-neutral-50">
+        <main className="bg-neutral-50 min-h-screen">
 
             {/* --- Aesthetic Hero Section --- */}
-            <section className="relative h-[75vh] md:h-[75vh] w-full flex items-center justify-center overflow-hidden">
+            <section className="relative h-[75vh] md:h-[76vh] w-full flex items-center justify-center overflow-hidden">
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0">
-                    <Image
-                        src="/landscape.jpg"
-                        alt="Premium Investment Landscape"
-                        fill
-                        className="object-cover"
-                        priority
-                    />
-                    <div className="absolute inset-0 bg-black/40" />
+                    <video src="/vid-3.mp4" autoPlay loop muted className="h-full w-full object-cover" />
+
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
                 </div>
 
                 {/* Hero Content */}
@@ -94,7 +92,7 @@ export default function Local() {
                         <span className="inline-block py-1 px-4 border border-amber-400/50 rounded-full text-amber-400 text-xs font-bold tracking-[0.3em] uppercase mb-4 bg-black/30 backdrop-blur-md">
                             Elite Opportunities
                         </span>
-                        <h1 className="text-3xl md:text-6xl font-medium text-white mb-4 leading-tight tracking-wider heading">
+                        <h1 className="text-4xl md:text-6xl font-medium text-white mb-4 leading-tight tracking-wider heading">
                             Umang Realtors <br />
                             {/* <div className="relative inline-block w-full md:w-auto md:min-w-[400px] h-[1.2em] overflow-hidden align-bottom">
                                 <AnimatePresence mode="wait">
@@ -111,118 +109,75 @@ export default function Local() {
                                 </AnimatePresence>
                             </div> */}
                         </h1>
-                        <p className="text-base md:text-lg text-neutral-200 mb-6 max-w-2xl mx-auto font-light leading-relaxed">
+                        <p className="text-md lg:text-lg text-neutral-200 mb-6 max-w-2xl mx-auto font-light leading-relaxed">
                             One of India&apos;s Largest Property Consultants & Brokers <br />
                             Connecting people with the right properties through expertise, technology, and personalized service.
                         </p>
-                  
+                        <Link href="/projects">
                         <motion.button
                             whileTap={{ scale: 0.95 }}
-                            onClick={() => document.getElementById('plots-section')?.scrollIntoView({ behavior: 'smooth' })}
                             className="cursor-pointer group relative inline-flex items-center gap-2 px-7 py-3 bg-amber-600 text-white rounded-lg font-medium overflow-hidden transition-all hover:bg-amber-700"
                         >
-                            Explore All
+                            Explore
                             <ArrowRight className="w-5 h-5" />
                         </motion.button>
+                        </Link>
                     </motion.div>
                 </div>
             </section>
 
-            <section>
-                <NewsTicker />
-            </section>
-
-            <section id="graph-chart" className="py-12 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-12 items-center lg:items-start">
-                <div className="w-full lg:w-[50%] animate-fade-in">
-                    <h2 className="text-2xl font-medium text-slate-900 mb-2">
+            <NewsTicker />
+                        
+            <section className="pt-10 max-w-6xl mx-6 lg:mx-8 xl:mx-auto flex flex-col lg:flex-row lg:pb-4 lg:gap-10 xl:gap-12 items-center lg:items-start">
+                <div className="w-full lg:w-[55%] animate-fade-in">
+                    <h2 className="font-bold tracking-wider uppercase text-sm text-amber-600 mb-2">
                         Why Choose Us ?<br />
                     </h2>
-                    <h2 className="text-4xl text-amber-600 mb-3">
-                            We are Offering The Best Real Estate Property
+                    <h2 className="text-4xl font-bold text-slate-900 mb-4">
+                        We are Offering The Best Real Estate Property
                     </h2>
                     <p className="text-slate-600 leading-relaxed mb-5 text-sm md:text-base">
-                       Founded in 2010 and headquartered in Delhi, India, Umang Realtors is one of the country's upcoming independent real estate services. We are specializing in the Sale, Purchase, Brand Leasing, Property Investment management of commercial as well Residential property in selected parts of India.We aim to bring the best of both worlds to enjoy premium investment. For this, the business tactics are tailored to meet clients' requirements. To address each property request, we have a bandwagon of professionals. From back-end support to CRM management and after-sale assistance, everything is aligned. It all makes Umang Realtors a leading real estate consultant in India.
+                        Founded in 2010 and headquartered in Delhi, India, Umang Realtors is one of the country’s upcoming independent real estate service providers. We specialize in the sale, purchase, brand leasing, and property investment management of commercial as well as residential properties across selected parts of India.
                     </p>
-
-                    <div className="flex flex-wrap gap-4">
-                        <Link
-                            href="/dholera-plan.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex-1 sm:flex-none inline-flex items-center justify-center px-8 py-3 bg-slate-900 text-white rounded-md hover:bg-slate-800 transition shadow-lg shadow-slate-200"
-                        >
-                            View Project
-                        </Link>
-
-                        <Link
-                            href="https://wa.me/917838697921"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex-1 sm:flex-none inline-flex items-center justify-center px-8 py-3 border border-slate-300 text-slate-800 rounded-md hover:border-slate-900 hover:text-slate-900 transition"
-                        >
-                            Inquire Now
-                        </Link>
-                    </div>
+                    <p className="text-slate-600 leading-relaxed mb-5 text-sm md:text-base">We aim to bring together the best of both worlds to deliver a premium investment experience. Our business strategies are carefully tailored to meet each client’s unique requirements. To address every property need, we are backed by a dedicated team of professionals. From back-end operations and CRM management to comprehensive after-sales support, every process is seamlessly aligned—making Umang Realtors a leading real estate consultant in India.</p>
+                   
                 </div>
 
-                <div className="w-full lg:w-[50%] mt-4 md:mt-8 lg:mt-0">
-                    
+                <div className="w-full lg:w-[40%] flex items-center justify-center">
+                    <Image
+                        src="/blob-4.png"
+                        alt="Why Choose Us"
+                        width={450}
+                        height={450}
+                        className="rounded-md"
+                    />
                 </div>
             </section>
 
-            {/* --- Available Plot Sizes Section --- */}
-            {/* --- Inquiry Modal Integration --- */}
-     
-            <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-        </main>
+        </main>     
 
-        <section className="bg-stone-50 pt-8 relative overflow-hidden">
-            
-            {/* Decorative Background Element - Subtle/Elegant */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-200 to-transparent opacity-50"></div>
+        <Services />
 
-            <div className="max-w-7xl mx-auto px-6">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0">
-                    {stats.map((stat, idx) => (
-                        <div
-                            key={idx}
-                            className={`
-                group relative flex flex-col items-center p-2 text-center transition-all duration-300
-                /* Add vertical dividers on large screens only */
-                ${idx !== stats.length - 1 ? 'lg:border-r border-stone-200' : ''}
-           `}
-                        >
-                            {/* Icon Container with subtle animation on hover */}
-                            <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-full bg-white border border-stone-100 shadow-sm text-amber-700 group-hover:scale-110 group-hover:bg-amber-50 group-hover:border-amber-100 transition-all duration-300 ease-out">
-                                {stat.icon}
-                            </div>
+            {/* <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} /> */}
 
-                            {/* Metric Value */}
-                            <div className="mb-2">
-                                <span className="text-4xl font-serif font-medium text-stone-900 tracking-tight">
-                                    {stat.value}
-                                </span>
-                            </div>
-
-                            {/* Label */}
-                            <div className="text-sm font-semibold uppercase tracking-widest text-stone-500 mb-1">
-                                {stat.label}
-                            </div>
-
-                            {/* Optional: Tiny sub-text for added context/elegance */}
-                            <div className="text-xs font-serif italic text-stone-400 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                                {stat.description}
-                            </div>
-                        </div>
-                    ))}
+        {/* <About /> */}
+        <section id="about-founder" className="pt-4 pb-12 lg:pb-0 lg:pt-12 max-w-6xl mx-6 lg:mx-8 xl:mx-auto flex flex-col gap-8 md:flex-row justify-between">
+            <div className="w-full  lg:w-[40%]">
+                <Image src="/blob-9.png" alt="Why Choose Us" width={360} height={240} className="" />
+            </div>
+            <div className="w-full lg:w-[60%]">
+                <div className="mt-6 lg:mt-12">
+                    <h6 className="text-sm font-bold leading-tight text-amber-600 mb-1">About Founder</h6>
+                    <h2 className="text-3xl font-bold leading-tight text-slate-900 mb-2">Sanjay Bhardwaj</h2>
+                    <p className="text-slate-600">Sanjay is recognized as one of the simple personalities who initiated international standards of event design, hospitality management, wedding creation, and event logistics management, with an eye on investment-based real estate, and has played a pivotal role in managing client services, sales, and communications.</p>
                 </div>
             </div>
-
         </section>
 
-        <section>
+
+        {/* <section>
             <WhyChooseUs />
-        </section>
+        </section> */}
 
     </>
     );
