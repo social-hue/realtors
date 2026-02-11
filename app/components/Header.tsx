@@ -41,7 +41,7 @@ export default function Header() {
             >
               Inquire Now
             </button> */}  
-            <a href="tel:7838697921">
+            <a href="tel:7303789661">
             <button
               className="w-full px-6 py-3 bg-slate-900 text-white rounded-sm hover:bg-slate-800 transition"
             >

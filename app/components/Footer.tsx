@@ -60,7 +60,9 @@ export default function Footer() {
               <h4 className="font-bold text-amber-500 mb-6 uppercase tracking-wider text-sm">Contact Us</h4>
               <ul className="space-y-4 text-slate-300 text-sm">
                 <li className="flex items-center gap-3">
-                  <Phone className="w-4 h-4" /> +917838697921, +918860018278
+                  <a href="tel:+917303789661">
+                  <Phone className="w-4 h-4 inline-block mr-2" />+91 7303789661
+                  </a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4" /> info@umangrealtors.com
