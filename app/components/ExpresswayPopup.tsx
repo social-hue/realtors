@@ -52,7 +52,7 @@ export default function ExpresswayPopup() {
                             <img
                                 src="/expresswayy.png"
                                 alt="Ahmedabad-Dholera Expressway"
-                                className="max-w-full max-h-[85vh] object-contain block rounded-xl"
+                                className="max-w-full max-h-[55vh] md:max-h-[65vh] object-contain block rounded-xl"
                             />
                         </div>
                     </motion.div>
