@@ -77,9 +77,9 @@ export default function Local() {
             <section className="relative h-[75vh] md:h-[76vh] w-full flex items-center justify-center overflow-hidden">
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0">
-                    <video src="/vid-3.mp4" autoPlay loop muted className="h-full w-full object-cover" />
+                    <video src="/vid-2.mp4" autoPlay loop muted className="h-full w-full object-cover" />
 
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
                 </div>
 
                 {/* Hero Content */}
@@ -92,7 +92,7 @@ export default function Local() {
                         <span className="inline-block py-1 px-4 border border-amber-400/50 rounded-full text-amber-400 text-xs font-bold tracking-[0.3em] uppercase mb-4 bg-black/30 backdrop-blur-md">
                             Elite Opportunities
                         </span>
-                        <h1 className="text-4xl md:text-6xl font-medium text-white mb-4 leading-tight tracking-wider heading">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white mb-4 leading-tight tracking-wider heading">
                             Umang Realtors <br />
                             {/* <div className="relative inline-block w-full md:w-auto md:min-w-[400px] h-[1.2em] overflow-hidden align-bottom">
                                 <AnimatePresence mode="wait">
@@ -114,59 +114,72 @@ export default function Local() {
                             Connecting people with the right properties through expertise, technology, and personalized service.
                         </p>
                         <Link href="/projects">
-                        <motion.button
-                            whileTap={{ scale: 0.95 }}
-                            className="cursor-pointer group relative inline-flex items-center gap-2 px-7 py-3 bg-amber-600 text-white rounded-lg font-medium overflow-hidden transition-all hover:bg-amber-700"
-                        >
-                            Explore
-                            <ArrowRight className="w-5 h-5" />
-                        </motion.button>
+                            <motion.button
+                                whileTap={{ scale: 0.95 }}
+                                className="cursor-pointer group relative inline-flex items-center gap-2 px-7 py-3 bg-amber-600 text-white rounded-lg font-medium overflow-hidden transition-all hover:bg-amber-700"
+                            >
+                                Explore
+                                <ArrowRight className="w-5 h-5" />
+                            </motion.button>
                         </Link>
                     </motion.div>
                 </div>
             </section>
 
             <NewsTicker />
-                        
-            <section className="pt-10 max-w-6xl mx-6 lg:mx-8 xl:mx-auto flex flex-col lg:flex-row lg:pb-4 lg:gap-10 xl:gap-12 items-center lg:items-start">
+
+            <section id="primary-section" className="pt-10 max-w-6xl mx-6 lg:mx-8 xl:mx-auto flex flex-col lg:flex-row lg:pb-4 lg:gap-10 xl:gap-12 items-center lg:items-start">
                 <div className="w-full lg:w-[55%] animate-fade-in">
                     <h2 className="font-bold tracking-wider uppercase text-sm text-amber-600 mb-2">
                         Why Choose Us ?<br />
                     </h2>
-                    <h2 className="text-4xl font-bold text-slate-900 mb-4">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
                         We are Offering The Best Real Estate Property
                     </h2>
                     <p className="text-slate-600 leading-relaxed mb-5 text-sm md:text-base">
                         Founded in 2010 and headquartered in Delhi, India, Umang Realtors is one of the country’s upcoming independent real estate service providers. We specialize in the sale, purchase, brand leasing, and property investment management of commercial as well as residential properties across selected parts of India.
                     </p>
                     <p className="text-slate-600 leading-relaxed mb-5 text-sm md:text-base">We aim to bring together the best of both worlds to deliver a premium investment experience. Our business strategies are carefully tailored to meet each client’s unique requirements. To address every property need, we are backed by a dedicated team of professionals. From back-end operations and CRM management to comprehensive after-sales support, every process is seamlessly aligned—making Umang Realtors a leading real estate consultant in India.</p>
-                   
+
                 </div>
 
                 <div className="w-full lg:w-[40%] flex items-center justify-center">
-                    <Image
-                        src="/blob-4.png"
-                        alt="Why Choose Us"
-                        width={450}
-                        height={450}
-                        className="rounded-md"
-                    />
+                    {/* MD Layout: Two 4:3 images */}
+                    <div className="mt-6 hidden md:flex lg:hidden w-full gap-6">
+                        <div className="w-1/2 aspect-[4/3] bg-slate-200 rounded-lg overflow-hidden relative">
+                            <img src="/compressed_smart-city.webp" alt="akt" className="w-full h-full object-cover" />
+                        </div>
+                        <div className="w-1/2 aspect-[4/3] bg-slate-200 rounded-lg overflow-hidden relative">
+                            <img src="/investment.png" alt="alt" className="w-full h-full object-cover" />
+                        </div>
+                    </div>
+
+                    {/* Default Layout (Mobile & Large Desktop) */}
+                    <div className="block md:hidden lg:block relative w-full">
+                        <Image
+                            src="/blob-4.png"
+                            alt="Why Choose Us"
+                            width={450}
+                            height={450}
+                            className="rounded-md w-full h-auto object-cover"
+                        />
+                    </div>
                 </div>
             </section>
 
-        </main>     
+        </main>
 
         <Services />
 
-            {/* <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} /> */}
+        {/* <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} /> */}
 
         {/* <About /> */}
         <section id="about-founder" className="pt-4 pb-12 lg:pb-0 lg:pt-12 max-w-6xl mx-6 lg:mx-8 xl:mx-auto flex flex-col gap-8 md:flex-row justify-between">
-            <div className="w-full  lg:w-[40%]">
+            <div className="w-full lg:w-[40%]">
                 <Image src="/blob-9.png" alt="Why Choose Us" width={360} height={240} className="" />
             </div>
             <div className="w-full lg:w-[60%]">
-                <div className="mt-6 lg:mt-12">
+                <div className="mt-6 md:mt-12">
                     <h6 className="text-sm font-bold leading-tight text-amber-600 mb-1">About Founder</h6>
                     <h2 className="text-3xl font-bold leading-tight text-slate-900 mb-2">Sanjay Bhardwaj</h2>
                     <p className="text-slate-600">Sanjay is recognized as one of the simple personalities who initiated international standards of event design, hospitality management, wedding creation, and event logistics management, with an eye on investment-based real estate, and has played a pivotal role in managing client services, sales, and communications.</p>

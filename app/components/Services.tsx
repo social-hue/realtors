@@ -49,7 +49,7 @@ export default function Services() {
                             Our Expertise
                         </span>
                         <h2 className="
-                        text-4xl font-bold text-slate-900 leading-tight">
+                        text-3xl lg:text-4xl font-bold text-slate-900 leading-tight">
                             Elevating Real Estate <br />
                             <span className="text-slate-400">Experiences.</span>
                         </h2>
