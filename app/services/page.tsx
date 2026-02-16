@@ -30,7 +30,7 @@ const ServicesPage = () => {
           desc: "To make an asset work toward financial expansion requires planned, flexible property management policies designed to protect value and maximize long-term returns."
         },
         {
-          title: "COMMERCIAL",
+          title: "DEVELOPERS",
           subtitle: "Find a Commercial Property",
           desc: "We are becoming a comprehensive leader in commercial real estate services and investments, offering tailored solutions to meet evolving business needs."
         },

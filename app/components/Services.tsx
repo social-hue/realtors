@@ -13,7 +13,7 @@ export default function Services() {
             by: "Asset Optimization"
         },
         {
-            category: "COMMERCIAL",
+            category: "DEVELOPERS",
             title: "Find a Commercial Property",
             description: "We are becoming the comprehensive leader in commercial real estate services and investments.",
             image: "/commercial.png",
