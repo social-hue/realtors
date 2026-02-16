@@ -52,6 +52,8 @@ export default function Footer() {
                 <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
                 <li><a href="/projects" className="hover:text-white transition-colors">Projects</a></li>
                 <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
+                <li><a href="/about-dholera" className="hover:text-white transition-colors">About Dholera</a></li>
+                <li><a href="/services" className="hover:text-white transition-colors">Services</a></li>
               </ul>
             </div>
 
@@ -61,7 +63,7 @@ export default function Footer() {
               <ul className="space-y-4 text-slate-300 text-sm">
                 <li className="flex items-center gap-3">
                   <a href="tel:+917303789661">
-                  <Phone className="w-4 h-4 inline-block mr-2" />+91 7303789661
+                    <Phone className="w-4 h-4 inline-block mr-2" />+91 7303789661
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
@@ -77,8 +79,8 @@ export default function Footer() {
                 <li className="md:hidden flex items-start gap-3">
                   <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
                   <div>
-                   B-701, 7th Floor West Gate, By True Value Tower, Nr YMCA Club, SG Highway, Ahmedabad, 380015
-                  </div> 
+                    B-701, 7th Floor West Gate, By True Value Tower, Nr YMCA Club, SG Highway, Ahmedabad, 380015
+                  </div>
                 </li>
                 <li className="md:hidden flex items-start gap-3">
                   <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
@@ -141,7 +143,7 @@ export default function Footer() {
                   <Instagram className="w-5 h-5 text-slate-400 hover:text-white cursor-pointer transition-colors" />
                 </a>
               </div>
-              
+
             </div>
           </div>
 

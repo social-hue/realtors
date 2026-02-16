@@ -1,5 +1,5 @@
 "use client";
-             
+
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -8,13 +8,13 @@ import {
     MapPin, Phone, Mail, Download, FileText, CreditCard, HelpCircle,
     ChevronDown, Check, Shield, Building2, TrendingUp, Ruler, Calendar,
     ArrowRight, Star, Landmark, Wallet, BadgeCheck, Clock
-} from "lucide-react";                                   
-import InquiryModal from "../../components/InquiryModal";
+} from "lucide-react";
+import InquiryModal from "./InquiryModal";
 
 // Project Overview Data
 const projectHighlights = [
     { icon: Ruler, label: "Total Area", value: "50+ Acres" },
-    { icon: Building2, label: "Plot Sizes", value: "200-2000 Sq. Yards" },
+    { icon: Building2, label: "Plot Sizes", value: "150-350 Sq. Yards" },
     { icon: TrendingUp, label: "Expected ROI", value: "150%+" },
     { icon: Calendar, label: "Possession", value: "Ready to Build" },
 ];
@@ -141,7 +141,7 @@ export default function DholeraProject1() {
                     </div>
 
                     {/* Category & Date */}
-                    <div className="flex flex-wrap items-center gap-4 mb-6">
+                    {/* <div className="flex flex-wrap items-center gap-4 mb-6">
                         <span className="inline-flex items-center gap-2 py-1.5 px-4 bg-amber-100 text-amber-700 text-xs font-bold tracking-wider uppercase rounded-full">
                             <BadgeCheck className="w-3.5 h-3.5" />
                             RERA Approved
@@ -150,7 +150,7 @@ export default function DholeraProject1() {
                             <Calendar className="w-4 h-4" />
                             Updated: January 2026
                         </span>
-                    </div>
+                    </div> */}
 
                     {/* Title */}
                     <h1 className="text-3xl md:text-4xl font-medium text-slate-900 mb-6 leading-[1.15]">
@@ -176,15 +176,17 @@ export default function DholeraProject1() {
                         </div>
 
                         <div className="flex items-center gap-3">
+
                             <button
-                                onClick={() => setIsModalOpen(true)}
                                 className="inline-flex items-center gap-2 px-6 py-2.5 bg-slate-900 text-white rounded-lg font-medium hover:bg-slate-800 transition-all text-sm"
                             >
-                                Book Site Visit
+                                <a href="tel:+917303789661">
+                                    Book Site Visit
+                                </a>
                                 <ArrowRight className="w-4 h-4" />
                             </button>
                             <Link
-                                href="/dholera-plan.pdf"
+                                href="/brochure.pdf"
                                 target="_blank"
                                 className="inline-flex items-center gap-2 px-6 py-2.5 border border-slate-300 text-slate-700 rounded-lg font-medium hover:border-slate-900 transition-all text-sm"
                             >
@@ -217,11 +219,11 @@ export default function DholeraProject1() {
             </section>
 
             {/* About Project Section */}
-            <section className="py-20 bg-neutral-50">
+            <section className="py-12 md:py-14 lg:py-20 bg-neutral-50">
                 <div className="max-w-6xl lg:mx-auto mx-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <span className="text-amber-600 text-sm font-bold uppercase tracking-widest mb-4 block">About The Project</span>
+                            <span className="text-amber-600 text-sm font-bold uppercase tracking-widest mb-2 block">About The Project</span>
                             <h2 className="text-3xl md:text-4xl font-medium text-slate-900 mb-6 leading-tight">
                                 Your Gateway to India&apos;s <br />
                                 <span className="text-amber-600">First Smart City</span>
@@ -261,7 +263,7 @@ export default function DholeraProject1() {
                                     className="w-full h-auto"
                                 />
                             </div>
-                            <div className="absolute -bottom-6 -left-6 bg-amber-600 text-white p-6 rounded-2xl shadow-xl">
+                            <div className=" lg:block hidden absolute -bottom-6 -left-6 bg-amber-600 text-white p-6 rounded-2xl shadow-xl">
                                 <div className="text-3xl font-bold">50+</div>
                                 <div className="text-sm opacity-90">Acres Developed</div>
                             </div>
@@ -309,7 +311,7 @@ export default function DholeraProject1() {
             {/* Amenities Section */}
             <section className="py-20 bg-slate-900">
                 <div className="max-w-6xl lg:mx-auto mx-6">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center justify-between">
                         <div>
                             <span className="text-amber-500 text-sm font-bold uppercase tracking-widest mb-4 block">World-Class Amenities</span>
                             <h2 className="text-3xl md:text-4xl font-medium text-white mb-8 leading-tight">
@@ -333,7 +335,7 @@ export default function DholeraProject1() {
                                 alt="Smart City Amenities"
                                 width={600}
                                 height={450}
-                                className="rounded-2xl shadow-2xl"
+                                className="w-full h-full object-cover rounded-xl shadow-xl"
                             />
                         </div>
                     </div>
@@ -455,7 +457,7 @@ export default function DholeraProject1() {
                             </div>
 
                             <Link
-                                href="/compressed_new-map.webp"
+                                href="/vrindavancity.jpeg"
                                 target="_blank"
                                 className="inline-flex items-center gap-3 px-8 py-4 bg-slate-900 text-white rounded-xl font-semibold hover:bg-slate-800 transition-all"
                             >
@@ -577,10 +579,10 @@ export default function DholeraProject1() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
-                            { name: "Project Brochure", icon: FileText, href: "/dholera-plan.pdf" },
+                            { name: "Project Brochure", icon: FileText, href: "/brochure.pdf" },
                             { name: "Master Plan", icon: Landmark, href: "/dholera-master-plan.png" },
                             { name: "Location Map", icon: MapPin, href: "/compressed_new-map.webp" },
-                            { name: "Price List", icon: CreditCard, href: "#" },
+                            { name: "Price List", icon: CreditCard, href: "tel:+917303789661" },
                         ].map((doc, idx) => (
                             <Link
                                 key={idx}
@@ -615,10 +617,11 @@ export default function DholeraProject1() {
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <button
-                            onClick={() => setIsModalOpen(true)}
                             className="inline-flex items-center gap-3 px-10 py-4 bg-white text-amber-700 rounded-full font-semibold hover:bg-amber-50 transition-all shadow-xl"
                         >
-                            Schedule Site Visit
+                            <a href="https://wa.me/917303789661">
+                                Schedule Site Visit
+                            </a>
                             <ArrowRight className="w-5 h-5" />
                         </button>
 
