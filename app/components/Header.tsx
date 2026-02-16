@@ -46,6 +46,7 @@ export default function Header() {
             </div>
           </a>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-slate-800">
+            <a href="/" className="hover:text-amber-600 transition-colors">Home</a>
             <a href="/about" className="hover:text-amber-600 transition-colors">About</a>
             <a href="/about-dholera" className="hover:text-amber-600 transition-colors">Dholera</a>
             <a href="/services" className="hover:text-amber-600 transition-colors">Services</a>
@@ -101,6 +102,13 @@ export default function Header() {
             }`}
         >
           <div className="bg-white px-6 py-6 space-y-4 shadow-md h-screen overflow-y-auto pb-20">
+            <a
+              href="/"
+              onClick={() => setOpen(false)}
+              className="block text-slate-700 font-medium hover:text-amber-600"
+            >
+              Home
+            </a>
             <a
               href="/about"
               onClick={() => setOpen(false)}

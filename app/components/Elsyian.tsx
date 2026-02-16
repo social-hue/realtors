@@ -14,7 +14,7 @@ import InquiryModal from "./InquiryModal";
 // Project Overview Data
 const projectHighlights = [
     { icon: Ruler, label: "Total Residential Area", value: "10 Acres" },
-    { icon: Building2, label: "Near By", value: "Dholera SIR" },
+    { icon: Building2, label: "Plot Sizes", value: "150-300 Sq. Yards" },
     { icon: TrendingUp, label: "Expected ROI", value: "150%+" },
     { icon: Calendar, label: "Possession", value: "Ready to Build" },
 ];
@@ -157,7 +157,7 @@ export default function DholeraProject1() {
 
                     {/* Title */}
                     <h1 className="text-3xl md:text-4xl font-medium text-slate-900 mb-6 leading-[1.15]">
-                        Elsyian - Plotting Your Path to Prosperity
+                        Elysian - Plotting Your Path to Prosperity
                     </h1>
 
                     {/* Subtitle / Excerpt */}
