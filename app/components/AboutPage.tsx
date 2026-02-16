@@ -33,7 +33,7 @@ export default function AboutPage() {
   return (
     <main>
       {/* ================= Founder Section ================= */}
-      <section className="mx-auto max-w-7xl px-6 py-16">
+      <section className="max-w-6xl mx-6 lg:mx-8 xl:mx-auto py-16">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
           {/* Founder Image */}
           <div className="relative h-[380px] w-full overflow-hidden rounded-lg">
@@ -87,7 +87,7 @@ export default function AboutPage() {
       </section>
 
       {/* ================= Services Section ================= */}
-      <section className="mx-auto max-w-7xl px-6 py-12 mb-8">
+      <section className="max-w-6xl mx-6 lg:mx-8 xl:mx-auto py-12 mb-8">
         <div className="mb-10 max-w-2xl">
           <p className="mb-3 text-sm uppercase tracking-widest text-amber-600">
             What We Do

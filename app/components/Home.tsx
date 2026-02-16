@@ -275,7 +275,7 @@ export default function Local() {
         {/* <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} /> */}
 
         {/* <About /> */}
-        <section id="about-founder" className="pt-4 pb-12 lg:pb-0 lg:pt-12 max-w-6xl mx-6 lg:mx-8 xl:mx-auto flex flex-col gap-8 md:flex-row justify-between">
+        <section id="about-founder" className="pt-6 pb-12 lg:pb-0 lg:pt-12 max-w-6xl mx-6 lg:mx-8 xl:mx-auto flex flex-col gap-8 md:flex-row justify-between">
             <motion.div
             initial={{ opacity: 0, y: 10 }}
                     whileInView={{opacity:1, y:0}}
