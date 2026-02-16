@@ -14,7 +14,7 @@ import InquiryModal from "./InquiryModal";
 // Project Overview Data
 const projectHighlights = [
     { icon: Ruler, label: "Total Area", value: "10+ Acres" },
-    { icon: Building2, label: "Plot Sizes", value: "350 Sq. Yards" },
+    { icon: Building2, label: "Plot Sizes", value: "150-216 Sq. Yards" },
     { icon: TrendingUp, label: "Expected ROI", value: "150%+" },
     { icon: Calendar, label: "Possession", value: "Ready to Build" },
 ];

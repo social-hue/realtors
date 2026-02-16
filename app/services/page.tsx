@@ -40,7 +40,7 @@ const ServicesPage = () => {
           desc: "We can help sell your investment properties at market value through strategic marketing and structured online auction processes."
         },
         {
-          title: "INVESTMENT",
+          title: "REAL ESTATE INVESTMENT",
           subtitle: "Find Your Perfect Property",
           desc: "Sign up with us to gain access to limited, magnificently curated, off-market property deals designed for discerning investors."
         }

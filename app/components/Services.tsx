@@ -27,7 +27,7 @@ export default function Services() {
             by: "Expert Sales Team"
         },
         {
-            category: "INVESTMENT",
+            category: "REAL ESTATE INVESTMENT",
             title: "Find Your Perfect Property",
             description: "Sign up with us to access limited, magnificently curated, off-market property deals.",
             image: "/investment.png",
