@@ -36,7 +36,7 @@ export default function Services() {
     ];
 
     return (
-        <section className="py-6 md:py-10 max-w-6xl mx-6 lg:mx-8 xl:mx-auto relative overflow-hidden bg-white" id="services">
+        <section className="mb-10 py-6 md:py-10 max-w-6xl mx-6 lg:mx-8 xl:mx-auto relative overflow-hidden bg-white" id="services">
             {/* Decorative Background Elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-30 pointer-events-none">
                 <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-amber-100/50 blur-3xl"></div>

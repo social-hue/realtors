@@ -1,6 +1,7 @@
 "use client";
-import { useState, useEffect } from "react";            
-import { X } from "lucide-react";                          
+import React, { useState, useEffect } from "react";
+
+import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function ExpresswayPopup() {
@@ -36,14 +37,14 @@ export default function ExpresswayPopup() {
                         exit={{ scale: 0.95, opacity: 0 }}
                         transition={{ duration: 0.3 }}
                         className="relative max-w-[90vw] max-h-[90vh] flex flex-col items-center"
-                        onClick={(e) => e.stopPropagation()}
+                        onClick={(e: React.MouseEvent) => e.stopPropagation()}
                     >
                         {/* Close Button - Clean White Circle */}
                         <button
                             onClick={handleClose}
                             className="absolute -top-3 -right-3 z-50 p-2 bg-white text-black rounded-full shadow-xl hover:bg-neutral-100 transition-colors border border-neutral-100 cursor-pointer"
                             aria-label="Close"
-                        > 
+                        >
                             <X className="w-5 h-5" />
                         </button>
 

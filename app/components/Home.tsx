@@ -275,7 +275,7 @@ export default function Local() {
         {/* <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} /> */}
 
         {/* <About /> */}
-        <section id="about-founder" className="pt-6 pb-12 lg:pb-0 lg:pt-12 max-w-6xl mx-6 lg:mx-8 xl:mx-auto flex flex-col gap-8 md:flex-row justify-between">
+        {/* <section id="about-founder" className="pt-6 pb-12 lg:pb-0 lg:pt-12 max-w-6xl mx-6 lg:mx-8 xl:mx-auto flex flex-col gap-8 md:flex-row justify-between">
             <motion.div
             initial={{ opacity: 0, y: 10 }}
                     whileInView={{opacity:1, y:0}}
@@ -290,7 +290,7 @@ export default function Local() {
                     <p className="text-slate-600">Sanjay is recognized as one of the simple personalities who initiated international standards of event design, hospitality management, wedding creation, and event logistics management, with an eye on investment-based real estate, and has played a pivotal role in managing client services, sales, and communications.</p>
                 </div>
             </div>
-        </section>
+        </section> */}
 
 
         {/* <section>
