@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Building2, Globe, TrendingUp, Cpu, Leaf, Truck } from 'lucide-react';
+import { Building2, Globe, TrendingUp, Cpu, Leaf, Truck, Home, Briefcase } from 'lucide-react';
 
 const AboutDholera = () => {
     return (
@@ -153,10 +153,66 @@ const AboutDholera = () => {
 
             </section>
 
-            <section className="pb-18 max-w-6xl mx-6 lg:mx-auto">
-                <div className="rounded-3xl p-8 lg:p-12 border border-slate-200">
+            {/* Residential and Commercial Development */}
+            <section className="py-16">
+                <div className="max-w-6xl mx-6 lg:mx-auto">
+                    <div className="text-center mb-8">
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Residential and Commercial Development</h2>
+                        <p className="text-slate-600 max-w-3xl mx-auto text-md">
+                            Dholera SIR is not just an industrial city—it is a complete urban ecosystem designed to offer a high quality of life for residents and professionals.
+                        </p>
+                    </div>
 
-                    <div className="flex flex-col lg:flex-row gap-6 lg:gap-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+                        {/* Residential Zones */}
+                        <div className="bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-100 hover:border-amber-300 transition-all duration-300 group">
+                            <div className="bg-amber-100 w-12 h-12 rounded-full flex items-center justify-center mb-6 group-hover:bg-amber-200 transition-colors">
+                                <Home className="w-8 h-8 text-amber-600" />
+                            </div>
+                            <h3 className="text-lg font-bold text-slate-800 mb-4">Residential Zones</h3>
+                            <ul className="space-y-3">
+                                {[
+                                    "Well-planned residential neighborhoods",
+                                    "Green open spaces and recreational areas",
+                                    "Schools, hospitals, and community centers",
+                                    "Affordable to premium housing options"
+                                ].map((item, index) => (
+                                    <li key={index} className="flex items-start gap-3">
+                                        <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                                        <span className="text-slate-700 text-md">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Commercial Zones */}
+                        <div className="bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-100 hover:border-blue-300 transition-all duration-300 group">
+                            <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
+                                <Briefcase className="w-6 h-6 text-blue-600" />
+                            </div>
+                            <h3 className="text-lg font-bold text-slate-800 mb-4">Commercial Zones</h3>
+                            <ul className="space-y-3">
+                                {[
+                                    "Business districts",
+                                    "IT parks and office complexes",
+                                    "Retail centers, malls, and entertainment hubs",
+                                    "Hotels and convention centers"
+                                ].map((item, index) => (
+                                    <li key={index} className="flex items-start gap-3">
+                                        <CheckCircle className="w-5 h-5 text-blue-500 mt-1 flex-shrink-0" />
+                                        <span className="text-slate-700 text-md">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="pb-18 max-w-6xl mx-6 lg:mx-auto">
+                <div className="rounded-3xl p-4 md:p-8 border border-slate-200">
+
+                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-12">
 
                         {/* Sustainability */}
                         <div className="w-full lg:w-1/2">
@@ -193,25 +249,27 @@ const AboutDholera = () => {
                         {/* Divider */}
                         <div className="hidden md:block w-px bg-slate-200 self-stretch" />
 
-                        {/* Investment */}
+                        {/* Why Choose Dholera */}
                         <div className="w-full lg:w-1/2">
                             <div className="flex items-center gap-3 mb-6">
                                 <TrendingUp className="w-6 h-6 text-amber-600" />
                                 <span className="text-amber-700 font-bold uppercase tracking-widest text-sm">
-                                    Investment
+                                    Opportunities
                                 </span>
                             </div>
 
                             <h2 className="text-3xl font-bold text-slate-900 mb-6">
-                                Why Invest Here?
+                                Why Choose Dholera?
                             </h2>
 
                             <ul className="space-y-4">
                                 {[
                                     "India’s first planned greenfield smart city",
-                                    "Part of globally significant industrial corridor",
+                                    "Part of a globally significant industrial corridor",
                                     "Government-supported development",
+                                    "World-class infrastructure",
                                     "High growth and appreciation potential",
+                                    "Ideal for industries, businesses, and residents"
                                 ].map((inv, idx) => (
                                     <li key={idx} className="flex items-start gap-3">
                                         <span className="text-amber-600 font-bold text-sm">
@@ -228,6 +286,7 @@ const AboutDholera = () => {
                     </div>
                 </div>
             </section>
+
 
         </main>
     );
