@@ -41,6 +41,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="-qvdPNOX-5F3FJe-QD6frX4UduhJccOLR-eE3pdgSRQ" />
       </head>
       <body
         className={`${playfair.variable} ${lato.variable} antialiased bg-dholera-light text-dholera-900`}
