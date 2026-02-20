@@ -58,7 +58,7 @@ export default function Header() {
                 Projects <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isProjectsOpen ? 'rotate-180' : ''}`} />
               </button>
               <div
-                className={`absolute left-0 mt-2 bg-white shadow-xl rounded-md overflow-hidden transition-all duration-300 transform origin-top-left border-t-4 border-amber-500
+                className={`absolute left-0 mt-6 bg-white shadow-xl rounded-md overflow-hidden transition-all duration-300 transform origin-top-left border-t-4 border-amber-500
                 ${isProjectsOpen ? 'opacity-100 visible' : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible'}
                 `}
               >
@@ -70,6 +70,9 @@ export default function Header() {
                 </a>
                 <a href="/projects/greentech-residency" className="block px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600">
                   GreenTech Residency (Nestoria)
+                </a>
+                <a href="/projects/expressview" className="block px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600">
+                  Expressview By Kavvan
                 </a>
               </div>
             </div>
@@ -153,6 +156,13 @@ export default function Header() {
                 className="block py-2 text-slate-700 font-medium hover:text-amber-600 pl-4 border-l-2 border-transparent hover:border-amber-500"
               >
                 GreenTech Residency
+              </a>
+              <a
+                href="/projects/expressview"
+                onClick={() => setOpen(false)}
+                className="block py-2 text-slate-700 font-medium hover:text-amber-600 pl-4 border-l-2 border-transparent hover:border-amber-500"
+              >
+                Expressview By Kavvan
               </a>
             </div>
 
