@@ -292,7 +292,7 @@ export default function Local() {
                     className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-24 md:py-32 lg:py-40"
                 >
                     <h2
-                        className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-snug tracking-wide max-w-5xl"
+                        className="text-2xl md:text-3xl lg:text-[44px] font-semibold text-white leading-snug tracking-wide max-w-5xl"
                     >
                         Real Estate&ensp;|&ensp;Commercial Properties&ensp;|&ensp;Plots
                         <br />
