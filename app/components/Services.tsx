@@ -86,7 +86,7 @@ export default function Services() {
                                     {service.category}
                                 </span>
 
-                                <h3 className="text-lg font-serif font-bold text-slate-900 mb-2 leading-tight">
+                                <h3 className="text-lg font-bold text-slate-900 mb-2 leading-tight">
                                     {service.title}
                                 </h3>
 
