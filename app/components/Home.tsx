@@ -151,6 +151,8 @@ export default function Local() {
 
     const texts = ["Real Estate", "In Dholera", "Gujarat"];
     const [textIndex, setTextIndex] = useState(0);
+    const [flipKey, setFlipKey] = useState(0);
+    const [isMd, setIsMd] = useState(false);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -158,6 +160,22 @@ export default function Local() {
         }, 3000);
         return () => clearInterval(interval);
     }, []);
+
+    useEffect(() => {
+        const mq = window.matchMedia("(min-width: 768px)");
+        setIsMd(mq.matches);
+        const handler = (e: MediaQueryListEvent) => setIsMd(e.matches);
+        mq.addEventListener("change", handler);
+        return () => mq.removeEventListener("change", handler);
+    }, []);
+
+    useEffect(() => {
+        if (!isMd) return;
+        const flipInterval = setInterval(() => {
+            setFlipKey((prev) => prev + 1);
+        }, 5000);
+        return () => clearInterval(flipInterval);
+    }, [isMd]);
 
     return (
         <>
@@ -168,7 +186,7 @@ export default function Local() {
                     {/* Background Image with Overlay */}
                     <div className="absolute inset-0">
                         <video src="/vid-2.mp4" autoPlay loop muted className="h-full w-full object-cover" />
-                        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+                        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/80" />
                     </div>
 
                     {/* Hero Content */}
@@ -178,10 +196,32 @@ export default function Local() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
                         >
-                            <span className="inline-block py-1 px-4 border border-amber-400/50 rounded-full text-amber-400 text-xs font-bold tracking-[0.3em] uppercase mb-4 bg-black/30 backdrop-blur-md">
-                                Elite Opportunities
+                            <span
+                                className="inline-block py-1 px-4 md:border md:border-amber-400/50 rounded-full text-amber-400 text-xs font-bold tracking-[0.3em] uppercase mb-4 md:bg-black/30 md:backdrop-blur-md"
+                                style={{ perspective: "600px" }}
+                            >
+                                {isMd ? (
+                                    "Elite Opportunity in India's First Greenfield Smart City - Dholera".split("").map((char, i) => (
+                                        <motion.span
+                                            key={`${flipKey}-${i}`}
+                                            className="inline-block"
+                                            style={{ transformOrigin: "top center" }}
+                                            initial={{ opacity: 0, rotateX: -90 }}
+                                            animate={{ opacity: 1, rotateX: 0 }}
+                                            transition={{
+                                                delay: i * 0.03,
+                                                duration: 0.4,
+                                                ease: [0.25, 0.46, 0.45, 0.94],
+                                            }}
+                                        >
+                                            {char === " " ? "\u00A0" : char}
+                                        </motion.span>
+                                    ))
+                                ) : (
+                                    "Elite Opportunity in India's First Greenfield Smart City - Dholera"
+                                )}
                             </span>
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white mb-4 leading-tight tracking-wider heading">
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl italic font-medium text-white mb-4 leading-tight tracking-wider heading">
                                 Umang Realtors <br />
                                 {/* <div className="relative inline-block w-full md:w-auto md:min-w-[400px] h-[1.2em] overflow-hidden align-bottom">
                                 <AnimatePresence mode="wait">
@@ -198,9 +238,11 @@ export default function Local() {
                                 </AnimatePresence>
                             </div> */}
                             </h1>
-                            <p className="text-md lg:text-lg text-neutral-200 mb-6 max-w-2xl mx-auto font-light leading-relaxed">
+                            <p className="text-lg text-neutral-200 mb-6 max-w-2xl mx-auto font-light leading-relaxed">
                                 One of India&apos;s Largest Property Consultants & Brokers <br />
-                                Connecting people with the right properties through expertise, technology, and personalized service.
+                                <span className="hidden md:block">
+                                    Connecting people with the right properties through expertise, technology, and personalized service.
+                                </span>
                             </p>
                             <Link href="/projects">
                                 <motion.button
@@ -273,7 +315,7 @@ export default function Local() {
             <Services />
 
             {/* --- Cityscape CTA Section --- */}
-            <section className="relative flex justify-center items-center w-full h-[60vh] md:h-[80vh] overflow-hidden">
+            <section className="relative flex justify-center items-center w-full h-[60vh] md:h-[65vh] overflow-hidden">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                     <img
@@ -292,9 +334,9 @@ export default function Local() {
                     className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-24 md:py-32 lg:py-40"
                 >
                     <h2
-                        className="text-2xl md:text-3xl lg:text-[44px] font-semibold text-white leading-snug tracking-wide max-w-5xl"
+                        className="text-2xl md:text-4xl font-bold text-white leading-snug tracking-wide max-w-5xl"
                     >
-                        Real Estate&ensp;|&ensp;Commercial Properties&ensp;|&ensp;Plots
+                        Real Estate | Commercial Properties | Plots
                         <br />
                         <span className="text-amber-400">in Dholera, India&apos;s Future Smart City</span>
                     </h2>
@@ -303,16 +345,16 @@ export default function Local() {
                         Discover premium investment opportunities in India&apos;s first greenfield smart city.
                     </p>
 
-                        <motion.button
-                            whileTap={{ scale: 0.95 }}
-                            className="cursor-pointer mt-8 inline-flex items-center gap-2 px-7 py-3 hover:bg-amber-700 text-white border-1 border-white font-light rounded-md shadow-lg transition-colors duration-300"
-                        >
-                            <a href="tel:+917303789661">
+                    <motion.button
+                        whileTap={{ scale: 0.95 }}
+                        className="cursor-pointer mt-8 inline-flex items-center gap-2 px-7 py-3 hover:bg-amber-700 text-white border-1 border-white hover:border-amber-700 font-light rounded-md shadow-lg transition-colors duration-300"
+                    >
+                        <a href="tel:+917303789661">
                             Contact Us
 
                             <ArrowRight className="w-4 h-4 inline-block ml-1 mb-0.5" />
-                            </a>
-                        </motion.button>
+                        </a>
+                    </motion.button>
                 </motion.div>
             </section>
 
