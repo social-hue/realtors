@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import type { Metadata, Viewport } from "next";
+import type { Metadata, Viewport } from "next";    
 import {
     Building2,
     Globe,

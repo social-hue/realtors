@@ -221,7 +221,7 @@ export default function Local() {
                                     "Elite Opportunity in India's First Greenfield Smart City - Dholera"
                                 )}
                             </span>
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl italic font-medium text-white mb-4 leading-tight tracking-wider heading">
+                            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-white mb-4 leading-tight tracking-wider">
                                 Umang Realtors <br />
                                 {/* <div className="relative inline-block w-full md:w-auto md:min-w-[400px] h-[1.2em] overflow-hidden align-bottom">
                                 <AnimatePresence mode="wait">
@@ -238,7 +238,7 @@ export default function Local() {
                                 </AnimatePresence>
                             </div> */}
                             </h1>
-                            <p className="text-lg text-neutral-200 mb-6 max-w-2xl mx-auto font-light leading-relaxed">
+                            <p className="text-md text-neutral-200 mb-6 max-w-2xl mx-auto font-light leading-relaxed">
                                 One of India&apos;s Largest Property Consultants & Brokers <br />
                                 <span className="hidden md:block">
                                     Connecting people with the right properties through expertise, technology, and personalized service.
