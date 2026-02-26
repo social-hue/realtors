@@ -50,6 +50,7 @@ export default function Header() {
             <a href="/about" className="hover:text-amber-600 transition-colors">About</a>
             <a href="/about-dholera" className="hover:text-amber-600 transition-colors">Dholera</a>
             <a href="/services" className="hover:text-amber-600 transition-colors">Services</a>
+            <a href="/our-team" className="hover:text-amber-600 transition-colors">Our Team</a>
             <div className="relative group" ref={dropdownRef}>
               <button
                 onClick={() => setIsProjectsOpen(!isProjectsOpen)}
@@ -132,6 +133,13 @@ export default function Header() {
               className="block text-slate-700 font-medium hover:text-amber-600"
             >
               Services
+            </a>
+            <a
+              href="/our-team"
+              onClick={() => setOpen(false)}
+              className="block text-slate-700 font-medium hover:text-amber-600"
+            >
+              Our Team
             </a>
 
             <div className="border-t border-slate-100 pt-4 mt-2">
