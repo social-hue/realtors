@@ -35,6 +35,45 @@ const teamMembers = [
 export default function OurTeam() {
     return (
         <main>
+            <section className="max-w-6xl mx-6 xl:mx-auto py-8 md:py-16">
+                <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+                    {/* Founder Image */}
+                    <div className="relative h-[380px] w-full overflow-hidden rounded-lg">
+                        <Image
+                            src="/new_one.png"
+                            alt="Founder portrait"
+                            fill
+                            className="object-cover"
+                            priority
+                        />
+                    </div>
+
+                    {/* Founder Content */}
+                    <div>
+                        <p className="mb-3 text-sm uppercase tracking-widest text-amber-600">
+                            About the Founder
+                        </p>
+                        <h1 className="mb-6 text-3xl font-medium leading-tight text-neutral-800">
+                            A vision in trust, <br /> clarity, and long-term value.
+                        </h1>
+                        <p className="mb-4 text-md leading-relaxed text-neutral-600">
+                            Founded by Mr. Sanjay Bhardwaj, a professional deeply rooted in the
+                            local real estate landscape, the company was created to redefine
+                            property transactions through transparency, trust, and informed
+                            decision-making. Guided by the belief that real estate is about
+                            shaping futures - not just buying or selling - his focus has always
+                            been on honest guidance and long-term relationships.
+                        </p>
+                        <p className="text-md leading-relaxed text-neutral-600">
+                            With a grounded personality and experience in international-standard
+                            event design, hospitality management, and investment-driven real
+                            estate, Mr. Bhardwaj plays a pivotal role in client service, sales,
+                            and communications, ensuring every interaction reflects
+                            professionalism, clarity, and care.
+                        </p>
+                    </div>
+                </div>
+            </section>
             {/* ================= Hero Section ================= */}
             <section className="relative bg-neutral-900 py-12 overflow-hidden">
                 {/* Decorative Elements */}
@@ -63,11 +102,12 @@ export default function OurTeam() {
                 </div>
             </section>
 
+
             {/* ================= Team Cards Section ================= */}
-            <section className="bg-neutral-50 py-16">
+            <section className="bg-neutral-50 py-8 md:py-16">
                 <div className="max-w-6xl mx-6 xl:mx-auto">
-                    <div className="text-center mb-14">
-                        <p className="mb-3 text-sm uppercase tracking-widest text-amber-600 font-semibold">
+                    <div className="text-center mb-10">
+                        <p className="mb-2 text-sm uppercase tracking-widest text-amber-600 font-semibold">
                             Leadership
                         </p>
                         <h2 className="text-3xl md:text-4xl font-medium text-neutral-800">
@@ -113,7 +153,7 @@ export default function OurTeam() {
                                     </p>
 
                                     {/* Skill Tags */}
-                                  
+
                                 </div>
                             </div>
                         ))}

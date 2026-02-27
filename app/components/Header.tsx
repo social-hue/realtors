@@ -45,7 +45,7 @@ export default function Header() {
               <img className='h-16 w-45 object-cover' src="/3.png" alt="logo" />
             </div>
           </a>
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-slate-800">
+          <div className="hidden lg:flex items-center gap-8 text-sm font-medium tracking-wide text-slate-800">
             <a href="/" className="hover:text-amber-600 transition-colors">Home</a>
             <a href="/about" className="hover:text-amber-600 transition-colors">About</a>
             <a href="/about-dholera" className="hover:text-amber-600 transition-colors">Dholera</a>
@@ -94,14 +94,14 @@ export default function Header() {
           </div>
           <button
             onClick={() => setOpen(!open)}
-            className="md:hidden text-slate-900"
+            className="lg:hidden text-slate-900 cursor-pointer"
             aria-label="Toggle menu"
           >
             {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
         {open ? <div
-          className={`md:hidden fixed left-0 right-0 z-40 bg-white
+          className={`lg:hidden fixed left-0 right-0 z-40 bg-white
           transition-all duration-300 ${open ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
             }`}
         >
