@@ -8,7 +8,7 @@ const teamMembers = [
         designation: "Associate Director",
         bio: "As Associate Director, she oversees overall management and administrative operations, ensuring smooth coordination across departments. She plays a key role in strategic planning, operational efficiency, and organizational growth.",
         icon: Briefcase,
-        accent: "from-slate-700 to-slate-800",
+        accent: "from-slate-300 to-slate-300",
         highlights: ["Strategic Planning", "Operations Management", "Organizational Growth"],
         image: "/varsha.jpeg",
     },
@@ -17,16 +17,16 @@ const teamMembers = [
         designation: "Asst. Director",
         bio: "As Assistant Director, she manages social media platforms while leading sales initiatives. Her expertise in audience engagement and lead conversion contributes significantly to business expansion.",
         icon: Megaphone,
-        accent: "from-slate-700 to-slate-800",
+        accent: "from-slate-300 to-slate-300",
         highlights: ["Social Media", "Lead Conversion", "Business Expansion"],
         image: "/apurva.jpeg",
     },
     {
         name: "Shakil Ahmad",
-        designation: "Digital Marketing Head & Real Estate Sales Expert",
+        designation: "Head of Digital Marketing & Real Estate Sales",
         bio: "As Digital Marketing Head and Real Estate Sales Expert, he drives strategic marketing campaigns while leading high-performing sales initiatives. ",
         icon: TrendingUp,
-        accent: "from-slate-700 to-slate-800",
+        accent: "from-slate-300 to-slate-300",
         highlights: ["Digital Marketing", "Sales Strategy", "Brand Visibility"],
         image: "/shakil.jpeg",
     }
@@ -35,7 +35,7 @@ const teamMembers = [
 export default function OurTeam() {
     return (
         <main>
-            <section className="max-w-6xl mx-6 xl:mx-auto py-8 md:py-16">
+            <section className="max-w-6xl mx-6 xl:mx-auto py-8 md:py-14">
                 <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
                     {/* Founder Image */}
                     <div className="relative h-[380px] w-full overflow-hidden rounded-lg">
@@ -75,18 +75,18 @@ export default function OurTeam() {
                 </div>
             </section>
             {/* ================= Hero Section ================= */}
-            <section className="relative bg-neutral-900 py-12 overflow-hidden">
+            <section className="relative bg-slate-900 py-10 overflow-hidden">
                 {/* Decorative Elements */}
                 <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-0 left-0 w-72 h-72 bg-amber-500 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-                    <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-400 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
+                    <div className="absolute top-0 left-0 w-72 h-72 bg-slate-500 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+                    <div className="absolute bottom-0 right-0 w-96 h-96 bg-slate-400 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
                 </div>
 
                 <div className="relative max-w-4xl mx-auto px-6 text-center">
                     <p className="mb-4 text-sm uppercase tracking-[0.25em] text-amber-400 font-medium">
                         The People Behind Our Vision
                     </p>
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                    <h1 className="text-4xl font-bold text-white mb-4 leading-tight">
                         Meet Our Team
                     </h1>
                     <p className="text-md text-neutral-400 max-w-2xl mx-auto leading-relaxed">
@@ -106,14 +106,7 @@ export default function OurTeam() {
             {/* ================= Team Cards Section ================= */}
             <section className="bg-neutral-50 py-8 md:py-16">
                 <div className="max-w-6xl mx-6 xl:mx-auto">
-                    <div className="text-center mb-10">
-                        <p className="mb-2 text-sm uppercase tracking-widest text-amber-600 font-semibold">
-                            Leadership
-                        </p>
-                        <h2 className="text-3xl md:text-4xl font-medium text-neutral-800">
-                            Our Core Team
-                        </h2>
-                    </div>
+                
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {teamMembers.map((member, index) => (
@@ -126,9 +119,9 @@ export default function OurTeam() {
                                     {/* Decorative pattern */}
                                     <div className="absolute inset-0 opacity-10">
                                         <svg className="w-full h-full" viewBox="0 0 400 300" fill="none">
-                                            <circle cx="50" cy="50" r="80" stroke="white" strokeWidth="0.5" />
-                                            <circle cx="350" cy="250" r="120" stroke="white" strokeWidth="0.5" />
-                                            <circle cx="200" cy="150" r="160" stroke="white" strokeWidth="0.3" />
+                                            <circle cx="50" cy="50" r="80" stroke="black" strokeWidth="0.5" />
+                                            <circle cx="350" cy="250" r="120" stroke="black" strokeWidth="0.5" />
+                                            <circle cx="200" cy="150" r="160" stroke="black" strokeWidth="0.3" />
                                         </svg>
                                     </div>
                                     <div className="overflow-hidden relative w-38 h-38 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
@@ -162,7 +155,7 @@ export default function OurTeam() {
             </section>
 
             {/* ================= Values Strip ================= */}
-            <section className="bg-neutral-900 py-14">
+            <section className="bg-slate-900 py-14">
                 <div className="max-w-6xl mx-6 xl:mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                         <div className="space-y-3">
@@ -208,7 +201,7 @@ export default function OurTeam() {
                         Dholera SIR, we&apos;re just a call away.
                     </p>
                     <a href="tel:+917303789661">
-                        <button className="px-8 py-3.5 bg-slate-900 text-white rounded-sm hover:bg-slate-800 transition-all duration-300 shadow-lg shadow-slate-900/20 font-medium tracking-wide">
+                        <button className="cursor-pointer px-8 py-3.5 bg-slate-900 text-white rounded-sm hover:bg-slate-800 transition-all duration-300 shadow-lg shadow-slate-900/20 font-medium tracking-wide">
                             Get in Touch
                         </button>
                     </a>
