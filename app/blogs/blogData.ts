@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
     {
         id: "why-dholera-is-next-big-investment",
         title: "Why Dholera is the Next Big Real Estate Investment Hub in India",
-        excerpt: "Discover why Dholera SIR is positioned to be India's first platinum-rated smart city and a global manufacturing hub.",
+        excerpt: "Dholera Special Investment Region (SIR) is a flagship project under the Delhi-Mumbai Industrial Corridor (DMIC)...",
         date: "February 24, 2026",
         category: "Smart Cities",
         readTime: "5 min read",
@@ -32,7 +32,7 @@ export const blogPosts: BlogPost[] = [
     {
         id: "top-reasons-to-invest",
         title: "Top Reasons to Invest in Dholera Smart City",
-        excerpt: "An in-depth analysis of the current market scenarios favoring commercial real estate investments for long-term yields.",
+        excerpt: "Dholera Smart City is not just another urban development—it is a meticulously planned ecosystem designed to support",
         date: "February 20, 2026",
         category: "Investment",
         readTime: "4 min read",
@@ -41,7 +41,7 @@ export const blogPosts: BlogPost[] = [
     {
         id: "dholera-smart-city",
         title: "Dholera Smart City: India's First Greenfield Smart City",
-        excerpt: "As the market evolves, stay ahead of the curve with our comprehensive guide to real estate trends in the current year.",
+        excerpt: "A greenfield smart city is one that is built entirely from scratch on undeveloped land, as opposed to retrofitting an existing...",
         date: "February 15, 2026",
         category: "Market Trends",
         readTime: "6 min read",
@@ -50,7 +50,7 @@ export const blogPosts: BlogPost[] = [
     {
         id: "infrastructure-projects",
         title: "Infrastructure Projects Boosting Dholera Real Estate",
-        excerpt: "From luxury apartments to serene villas, explore top residential projects that promise an elevated lifestyle.",
+        excerpt: "The crown jewel of Dholera's connectivity infrastructure is the Ahmedabad-Dholera Expressway. This six-lane, access-controlled...",
         date: "February 10, 2026",
         category: "Residential",
         readTime: "5 min read",
@@ -59,7 +59,7 @@ export const blogPosts: BlogPost[] = [
     {
         id: "residential-commercial",
         title: "Residential vs Commercial Investment in Dholera: Which is Better?",
-        excerpt: "How sustainable housing is no longer just a trend, but a necessity. A look inside the eco-friendly innovations of GreenTech Residency.",
+        excerpt: "When it comes to investing in Dholera, the two primary asset classes are residential and commercial real estate...",
         date: "February 5, 2026",
         category: "Sustainability",
         readTime: "4 min read",
@@ -68,7 +68,7 @@ export const blogPosts: BlogPost[] = [
     {
         id: "why-early-investment",
         title: "Why Early Investment in Dholera Can Give High Returns",
-        excerpt: "Everything you need to know about purchasing land, dealing with legalities, and making an informed decision.",
+        excerpt: "In real estate, timing is everything. Investors who entered markets like Gurgaon, Noida, and Navi Mumbai during their...",
         date: "January 28, 2026",
         category: "Guides",
         readTime: "7 min read",
@@ -77,7 +77,7 @@ export const blogPosts: BlogPost[] = [
     {
         id: "dholera-vs-other-smart-cities",
         title: "Dholera vs Other Smart Cities in India: A Comparison",
-        excerpt: "Adapting to new regulations and shifting consumer demands in the dynamic world of property buying and selling.",
+        excerpt: "India's Smart Cities Mission, launched in 2015, identified 100 cities for smart city development. However, most of these are...",
         date: "January 20, 2026",
         category: "Industry News",
         readTime: "5 min read",
@@ -86,7 +86,7 @@ export const blogPosts: BlogPost[] = [
     {
         id: "dholera-international-airport",
         title: "How Dholera International Airport Will Boost Property Prices",
-        excerpt: "Adapting to new regulations and shifting consumer demands in the dynamic world of property buying and selling.",
+        excerpt: "The Dholera International Airport is one of the most significant infrastructure projects currently underway in India...",
         date: "January 20, 2026",
         category: "Industry News",
         readTime: "5 min read",
@@ -95,7 +95,7 @@ export const blogPosts: BlogPost[] = [
     {
         id: "is-dholera-safe",
         title: "Is Dholera a Safe Real Estate Investment?",
-        excerpt: "Adapting to new regulations and shifting consumer demands in the dynamic world of property buying and selling.",
+        excerpt: "Any large-scale development project invites scrutiny, and Dholera is no exception. Potential investors often raise valid...",
         date: "January 20, 2026",
         category: "Industry News",
         readTime: "5 min read",
@@ -104,7 +104,7 @@ export const blogPosts: BlogPost[] = [
     {
         id: "future-growth-potential",
         title: "Future Growth Potential of Dholera Smart City",
-        excerpt: "Adapting to new regulations and shifting consumer demands in the dynamic world of property buying and selling.",
+        excerpt: "Dholera's growth story is best understood through the lens of infrastructure milestones and their cascading effects on economic activity...",
         date: "January 20, 2026",
         category: "Industry News",
         readTime: "5 min read",

@@ -14,7 +14,7 @@ const teamMembers = [
     },
     {
         name: "Apurva Rai",
-        designation: "Asst. Director",
+        designation: "Asst. Director Sales",
         bio: "As Assistant Director, she manages social media platforms while leading sales initiatives. Her expertise in audience engagement and lead conversion contributes significantly to business expansion.",
         icon: Megaphone,
         accent: "from-slate-300 to-slate-300",
