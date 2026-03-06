@@ -268,8 +268,8 @@ export default function AboutDholeraPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Residential Zones */}
-                        <div className="bg-slate-50 p-7 rounded-2xl border border-slate-100 hover:border-amber-300 transition-all duration-300 group">
-                            <div className="bg-amber-100 w-12 h-12 rounded-full flex items-center justify-center mb-6 group-hover:bg-amber-200 transition-colors">
+                        <div className="bg-slate-50 p-7 rounded-2xl border border-slate-100 transition-all duration-300 group">
+                            <div className="bg-amber-100 w-12 h-12 rounded-full flex items-center justify-center mb-6 transition-colors">
                                 <Home className="w-6 h-6 text-amber-600" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-800 mb-4">Residential Zones</h3>
@@ -289,8 +289,8 @@ export default function AboutDholeraPage() {
                         </div>
 
                         {/* Commercial Zones */}
-                        <div className="bg-slate-50 p-7 rounded-2xl border border-slate-100 hover:border-blue-300 transition-all duration-300 group">
-                            <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
+                        <div className="bg-slate-50 p-7 rounded-2xl border border-slate-100 transition-all duration-300 group">
+                            <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-6 transition-colors">
                                 <Briefcase className="w-6 h-6 text-blue-600" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-800 mb-4">Commercial Zones</h3>
