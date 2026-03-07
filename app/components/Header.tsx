@@ -50,12 +50,10 @@ export default function Header() {
             <a href="/about" className="hover:text-amber-600 transition-colors">About</a>
             <a href="/about-dholera" className="hover:text-amber-600 transition-colors">Dholera</a>
             <a href="/services" className="hover:text-amber-600 transition-colors">Services</a>
-            <a href="/our-team" className="hover:text-amber-600 transition-colors">Our Team</a>
-            <a href="/blogs" className="hover:text-amber-600 transition-colors">Blogs</a>
-            <div className="relative group" ref={dropdownRef}>
+              <div className="relative group" ref={dropdownRef}>
               <button
                 onClick={() => setIsProjectsOpen(!isProjectsOpen)}
-                className="flex items-center gap-1 hover:text-amber-600 transition-colors focus:outline-none"
+                className="cursor-pointer flex items-center gap-1 hover:text-amber-600 transition-colors focus:outline-none"
               >
                 Projects <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isProjectsOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -78,6 +76,9 @@ export default function Header() {
                 </a>
               </div>
             </div>
+            <a href="/our-team" className="hover:text-amber-600 transition-colors">Our Team</a>
+            <a href="/blogs" className="hover:text-amber-600 transition-colors">Blogs</a>
+          
             {/* <a href="#gallery" className="hover:text-amber-600 transition-colors">Gallery</a> */}
             {/* <button
               onClick={() => setIsModalOpen(true)}
@@ -135,20 +136,6 @@ export default function Header() {
             >
               Services
             </a>
-            <a
-              href="/our-team"
-              onClick={() => setOpen(false)}
-              className="block text-slate-700 font-medium hover:text-amber-600"
-            >
-              Our Team
-            </a>
-            <a
-              href="/blogs"
-              onClick={() => setOpen(false)}
-              className="block text-slate-700 font-medium hover:text-amber-600"
-            >
-              Blogs
-            </a>
 
             <div className="border-t border-slate-100 pt-4 mt-2">
               <span className="block text-slate-400 text-xs font-bold uppercase tracking-widest mb-3">Projects</span>
@@ -181,6 +168,23 @@ export default function Header() {
                 Expressview By Kavvan
               </a>
             </div>
+
+            <a
+              href="/our-team"
+              onClick={() => setOpen(false)}
+              className="block text-slate-700 font-medium hover:text-amber-600"
+            >
+              Our Team
+            </a>
+            <a
+              href="/blogs"
+              onClick={() => setOpen(false)}
+              className="block text-slate-700 font-medium hover:text-amber-600"
+            >
+              Blogs
+            </a>
+
+         
 
             <a href="tel:7838697921">
               <button className="w-full px-6 py-3 bg-slate-900 text-white rounded-sm hover:bg-slate-800 transition mt-4">
