@@ -76,7 +76,7 @@ export default function Header() {
                 </a>
               </div>
             </div>
-            <a href="/our-team" className="hover:text-amber-600 transition-colors">Our Team</a>
+            {/* <a href="/our-team" className="hover:text-amber-600 transition-colors">Our Team</a> */}
             <a href="/blogs" className="hover:text-amber-600 transition-colors">Blogs</a>
           
             {/* <a href="#gallery" className="hover:text-amber-600 transition-colors">Gallery</a> */}
@@ -86,7 +86,7 @@ export default function Header() {
             >
               Inquire Now
             </button> */}
-            <a href="tel:+917303789661">
+            <a href="tel:+919311046655">
               <button
                 className="w-full px-6 py-3 bg-slate-900 text-white rounded-sm hover:bg-slate-800 transition"
               >
@@ -169,13 +169,13 @@ export default function Header() {
               </a>
             </div>
 
-            <a
+            {/* <a
               href="/our-team"
               onClick={() => setOpen(false)}
               className="block text-slate-700 font-medium hover:text-amber-600"
             >
               Our Team
-            </a>
+            </a> */}
             <a
               href="/blogs"
               onClick={() => setOpen(false)}
@@ -186,7 +186,7 @@ export default function Header() {
 
          
 
-            <a href="tel:7838697921">
+            <a href="tel:9311046655">
               <button className="w-full px-6 py-3 bg-slate-900 text-white rounded-sm hover:bg-slate-800 transition mt-4">
                 Inquire Now
               </button>
