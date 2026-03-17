@@ -144,7 +144,7 @@ export default function AboutPage() {
         </div>
       </section>
       {/* ================= What We Do Section ================= */}
-      <section className="bg-neutral-900 text-white py-16">
+      <section className="bg-slate-900 text-white py-16">
         <div className="max-w-6xl mx-6 xl:mx-auto ">
           <div className="text-center mb-10">
             <p className="mb-3 text-sm uppercase tracking-widest text-amber-400">
@@ -163,7 +163,7 @@ export default function AboutPage() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-neutral-800 p-8 rounded-lg hover:bg-neutral-700 transition duration-300"
+                className="bg-slate-800/50 p-8 rounded-lg hover:bg-slate-700/50 transition duration-300"
               >
                 <service.icon className="w-10 h-10 text-amber-500 mb-4" />
                 <h3 className="text-xl font-medium mb-3">{service.title}</h3>

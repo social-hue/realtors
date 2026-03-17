@@ -254,7 +254,7 @@ export default function DholeraProject1() {
                         </div>
 
                         <div className="relative">
-                            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                            <div className="relative rounded-2xl overflow-hidden shadow-sm">
                                 <Image
                                     src="/dholera-master-plan.png"
                                     alt="Dholera Master Plan"
@@ -420,7 +420,7 @@ export default function DholeraProject1() {
                 <div className="max-w-6xl lg:mx-auto mx-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1">
-                            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                            <div className="relative rounded-2xl overflow-hidden shadow-md">
                                 <Image
                                     src="/location.jpeg"
                                     alt="Project Location"
@@ -563,7 +563,7 @@ export default function DholeraProject1() {
 
             {/* Downloads Section */}
             <section className="py-16 bg-slate-900">
-                <div className="max-w-6xl lg:mx-auto mx-6">
+                <div className="max-w-5xl lg:mx-auto mx-6">
                     <div className="text-center mb-12">
                         <span className="text-amber-500 text-sm font-bold uppercase tracking-widest mb-4 block">
                             <FileText className="inline-block w-4 h-4 mr-2" />
@@ -577,12 +577,12 @@ export default function DholeraProject1() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
                             { name: "Project Brochure", icon: FileText, href: "/brochure.pdf" },
                             { name: "Master Plan", icon: Landmark, href: "/dholera-master-plan.png" },
                             { name: "Location Map", icon: MapPin, href: "/compressed_new-map.webp" },
-                            { name: "Price List", icon: CreditCard, href: "tel:+917303789661" },
+                            // { name: "Price List", icon: CreditCard, href: "tel:+917303789661" },
                         ].map((doc, idx) => (
                             <Link
                                 key={idx}
