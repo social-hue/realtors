@@ -63,16 +63,16 @@ export default function Header() {
                 `}
               >
                 <a href="/projects/vrindavan-city" className="block px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600 border-b border-slate-100">
-                  Vrindavan City (Kavaan)
+                  Vrindavan City
                 </a>
                 <a href="/projects/elysian" className="block px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600 border-b border-slate-100">
-                  Elysian By Singla
+                  Elysian
                 </a>
                 <a href="/projects/greentech-residency" className="block px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600">
-                  GreenTech Residency (Nestoria)
+                  GreenTech Residency
                 </a>
                 <a href="/projects/expressview" className="block px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-amber-600">
-                  Expressview By Kavvan
+                  Expressview
                 </a>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function Header() {
                 onClick={() => setOpen(false)}
                 className="block py-2 text-slate-700 font-medium hover:text-amber-600 pl-4 border-l-2 border-transparent hover:border-amber-500"
               >
-                Elysian By Singla
+                Elysian
               </a>
               <a
                 href="/projects/greentech-residency"
@@ -165,7 +165,7 @@ export default function Header() {
                 onClick={() => setOpen(false)}
                 className="block py-2 text-slate-700 font-medium hover:text-amber-600 pl-4 border-l-2 border-transparent hover:border-amber-500"
               >
-                Expressview By Kavvan
+                Expressview
               </a>
             </div>
 

@@ -549,7 +549,7 @@ export default function DholeraProject1() {
 
             {/* Downloads Section */}
             <section className="py-16 bg-slate-900">
-                <div className="max-w-6xl lg:mx-auto mx-6">
+                <div className="max-w-5xl lg:mx-auto mx-6">
                     <div className="text-center mb-12">
                         <span className="text-amber-500 text-sm font-bold uppercase tracking-widest mb-4 block">
                             <FileText className="inline-block w-4 h-4 mr-2" />
@@ -563,12 +563,12 @@ export default function DholeraProject1() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
                             { name: "Project Brochure", icon: FileText, href: "/brochure-elsyian.pdf" },
                             { name: "Master Plan", icon: Landmark, href: "/master-plan-elsyian.pdf" },
                             { name: "Location Map", icon: MapPin, href: "/elsyian-map.png" },
-                            { name: "Price List", icon: CreditCard, href: "tel:+917303789661" },
+                            // { name: "Price List", icon: CreditCard, href: "tel:+917303789661" },
                         ].map((doc, idx) => (
                             <Link
                                 key={idx}

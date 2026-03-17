@@ -54,7 +54,6 @@ export default function Footer() {
                 <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
                 <li><a href="/about-dholera" className="hover:text-white transition-colors">About Dholera</a></li>
                 <li><a href="/services" className="hover:text-white transition-colors">Services</a></li>
-                <li><a href="/our-team" className="hover:text-white transition-colors">Our Team</a></li>
               </ul>
             </div>
 
@@ -62,8 +61,12 @@ export default function Footer() {
             <div>
               <h4 className="font-bold text-amber-500 mb-6 uppercase tracking-wider text-sm">Contact Us</h4>
               <ul className="space-y-4 text-slate-300 text-sm">
-                <li className="flex items-center gap-3">
-                    <Phone className="w-4 h-4 inline-block" />+91 7303789661, +91 93110 46655
+                <li className="flex items-start gap-3">
+                    <Phone className="w-4 h-4 mt-1 flex-shrink-0" />
+                    <div className="flex flex-col">
+                      <span className="whitespace-nowrap">+91 7303789661</span>
+                      <span className="whitespace-nowrap">+91 93110 46655</span>
+                    </div>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4" /> info@umangrealtors.com
