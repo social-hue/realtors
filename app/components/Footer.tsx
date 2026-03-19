@@ -144,9 +144,9 @@ export default function Footer() {
                 <a target='_blank' href="https://www.instagram.com/umangrealtorsnoida">
                   <Instagram className="w-5 h-5 text-slate-400 hover:text-white cursor-pointer transition-colors" />
                 </a>
-                {/* <a target='_blank' href="https://www.youtube.com/@umangrealtors">
+                <a target='_blank' href="https://www.youtube.com/@umangrealtors">
                   <Youtube size={22} className="text-slate-400 hover:text-white cursor-pointer transition-colors" />
-                </a> */}
+                </a>
               </div>
 
             </div>
